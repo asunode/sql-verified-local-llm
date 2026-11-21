@@ -1,0 +1,784 @@
+{
+ "aciklama": "Test seti v5 — Web AI, 2026-11-21 (Adım 11). 32 istek, kimlikler Z01–Z32. 'metin', 'bayraklar' ve 'beklenen' Web AI tablosundan birebir; 'beklenen' esas alınır. 'paket', 'kart', 'baglam' bayraklardan; 'kabul' ve 'beklenen_sonuc' beklenen metninin DAI tarafından yapılı aktarımıdır (çoklu küme ihtiyaclar; 'sorular' her soru için kabul edilen konular; 'eksik_icerir' eksik içinde bulunması gereken kodlar; null = denetlenmez; 'beklenen_sonuc' tek değer ya da kabul edilen değerler listesi, 'atama_yok' = A tamam değil). Kart verilirse paket karttan. Uyarı ve mesaj beklentileri yalnız 'beklenen' metnindedir, elle puanlanır. Bu setle hiçbir ayar yapılmaz.",
+ "varsayilan_baglam": {
+  "usb_serial_jtag": true,
+  "uart0_konsol": true,
+  "jtag_pinleri": false,
+  "harici_flash_beslemesi": false
+ },
+ "tekrar": [
+  "Z01",
+  "Z10",
+  "Z20"
+ ],
+ "istekler": [
+  {
+   "id": "Z01",
+   "kategori": "soru",
+   "metin": "GPIO20 hangi işlevlere sahip?",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: pin_islevi; ihtiyaç yok; cevap gpio_islev'den, kaynaklı; atama yok",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "pin_islevi"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z02",
+   "kategori": "soru",
+   "metin": "GPIO9'u buton girişi olarak kullanırsam bir sakıncası olur mu?",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: pin_kisiti (strapping); ihtiyaç ve tercih YOK (GPIO_IN + tercih GPIO9 çıkarsa yanlış)",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "pin_kisiti"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z03",
+   "kategori": "soru",
+   "metin": "CAN hattını hangi pinlere bağlayabilirim?",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: arayuz_pinleri; eş adla TWAI cevabı, kaynaklı",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "arayuz_pinleri"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z04",
+   "kategori": "soru",
+   "metin": "Analog giriş için hangi pinler uygun?",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: arayuz_pinleri; ADC cevabı",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "arayuz_pinleri"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z05",
+   "kategori": "soru",
+   "metin": "QFN40 paketinde hangi GPIO'lar var?",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: paket_pinleri; tablodan liste",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "paket_pinleri"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z06",
+   "kategori": "soru",
+   "metin": "GPIO3'ten en fazla kaç mA çekebilirim?",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: diger → tabloda_yok; GPIO3 tercih ya da bahis hatası doğurmaz; uydurma değer yok",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "diger"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z07",
+   "kategori": "soru",
+   "metin": "Hangi pinlerden haberleşme yapabilirim?",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: arayuz_pinleri + cevap.arayuz_eksik (\"ne yazmalısın\" ile)",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "arayuz_pinleri"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z08",
+   "kategori": "soru",
+   "metin": "Bu pinin işlevleri neler?",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: pin_islevi + cevap.gpio_eksik",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "pin_islevi"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z09",
+   "kategori": "karisik",
+   "metin": "Bir buzzer ve bir PIR hareket sensörü bağlayacağım. GPIO15'i kullanmamda sakınca var mı?",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "buzzer GPIO_OUT ya da PWM ×1; PIR GPIO_IN ×1; soru: pin_kisiti (GPIO15); GPIO15 tercih değil; atandi",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_IN"
+     ],
+     "sorular": [
+      [
+       "pin_kisiti"
+      ]
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "PWM",
+      "GPIO_IN"
+     ],
+     "sorular": [
+      [
+       "pin_kisiti"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z10",
+   "kategori": "karisik",
+   "metin": "İki buton bağlayacağım; karttaki mavi LED hangi pine bağlı?",
+   "bayraklar": "--kart SuperMini",
+   "paket": null,
+   "kart": "SuperMini",
+   "baglam": {},
+   "beklenen": "GPIO_IN ×2; soru: kart_led → GPIO15 [DOĞRULANMADI] + görev notu; atandi; atama konnektör pinlerinde, ped ve parça pini (GPIO8, 9, 15) kullanılmaz",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN"
+     ],
+     "sorular": [
+      [
+       "kart_led"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z11",
+   "kategori": "kart",
+   "metin": "Karttaki BOOT butonu hangi GPIO'ya bağlı?",
+   "bayraklar": "--kart SuperMini",
+   "paket": null,
+   "kart": "SuperMini",
+   "baglam": {},
+   "beklenen": "soru: kart_buton → GPIO9 [DOĞRULANMADI]",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "kart_buton"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z12",
+   "kategori": "kart",
+   "metin": "Kartın kenarındaki pinler hangileri?",
+   "bayraklar": "--kart nanoESP32-C6-v1.0",
+   "paket": null,
+   "kart": "nanoESP32-C6-v1.0",
+   "baglam": {},
+   "beklenen": "soru: kart_pin_cikisi → J1 ve J6, kaynak belgeli (işaretsiz)",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "kart_pin_cikisi"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z13",
+   "kategori": "kart",
+   "metin": "Karttaki RGB LED hangi pinde?",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "soru: kart_led → cevap.kart_eksik; listede ve örnekte SuperMini",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [],
+     "sorular": [
+      [
+       "kart_led"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "pin_gerekmiyor"
+  },
+  {
+   "id": "Z14",
+   "kategori": "kart",
+   "metin": "Dört buton ve dört LED bağlayacağım.",
+   "bayraklar": "--kart SuperMini",
+   "paket": null,
+   "kart": "SuperMini",
+   "baglam": {},
+   "beklenen": "GPIO_IN 4, GPIO_OUT 4; atandi; hepsi konnektörde, ped ve parça pini yok",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z15",
+   "kategori": "rmt",
+   "metin": "Adreslenebilir LED halkası süreceğim ve bir kızılötesi kumanda alıcısını okuyacağım.",
+   "bayraklar": "--kart SuperMini",
+   "paket": null,
+   "kart": "SuperMini",
+   "baglam": {},
+   "beklenen": "RMT_TX ×1, RMT_RX ×1; atandi; kart üstü WS2812 pini (GPIO8) kullanılmaz",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "RMT_TX",
+      "RMT_RX"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z16",
+   "kategori": "kart",
+   "metin": "Bir butonu GPIO22'ye bağla.",
+   "bayraklar": "--kart SuperMini",
+   "paket": null,
+   "kart": "SuperMini",
+   "baglam": {},
+   "beklenen": "GPIO_IN, tercih GPIO22; uygulanır + ped uyarısı",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN"
+     ],
+     "pin_tercihleri": [
+      {
+       "arayuz": "GPIO_IN",
+       "sinyal": null,
+       "gpio": 22
+      }
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z17",
+   "kategori": "kart",
+   "metin": "Kapı sensörünü GPIO8'den okuyacağım.",
+   "bayraklar": "--kart nanoESP32-C6-v1.0",
+   "paket": null,
+   "kart": "nanoESP32-C6-v1.0",
+   "baglam": {},
+   "beklenen": "GPIO_IN, tercih GPIO8: uygulanır + parça uyarısı (D2 WS2812) + strapping uyarısı, YA DA kural yasaklıyorsa neden + öneri + ALTERNATİF. Sessiz geçiş yanlış",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN"
+     ],
+     "pin_tercihleri": [
+      {
+       "arayuz": "GPIO_IN",
+       "sinyal": null,
+       "gpio": 8
+      }
+     ]
+    }
+   ],
+   "beklenen_sonuc": [
+    "atandi",
+    "tercih_uygulanamadi"
+   ]
+  },
+  {
+   "id": "Z18",
+   "kategori": "kart",
+   "metin": "İki servo motor süreceğim.",
+   "bayraklar": "--kart \"nanoESP32-C6 (v0.2)\"",
+   "paket": null,
+   "kart": "nanoESP32-C6 (v0.2)",
+   "baglam": {},
+   "beklenen": "PWM ×2; atandi; \"kart verisi doğrulanmadı\" notu",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "PWM",
+      "PWM"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z19",
+   "kategori": "kart",
+   "metin": "Röleyi GPIO15'e bağla, ayrıca bir potansiyometre okuyacağım.",
+   "bayraklar": "--kart SuperMini",
+   "paket": null,
+   "kart": "SuperMini",
+   "baglam": {},
+   "beklenen": "GPIO_OUT, tercih GPIO15: uygulanır + parça uyarısı (PD2) + strapping uyarısı, YA DA neden + öneri + ALTERNATİF; ADC ×1; atandi",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "ADC"
+     ],
+     "pin_tercihleri": [
+      {
+       "arayuz": "GPIO_OUT",
+       "sinyal": null,
+       "gpio": 15
+      }
+     ]
+    }
+   ],
+   "beklenen_sonuc": [
+    "atandi",
+    "tercih_uygulanamadi"
+   ]
+  },
+  {
+   "id": "Z20",
+   "kategori": "spi",
+   "metin": "Bir SD kart modülü ve bir TFT ekranı aynı SPI hattına bağlayacağım.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "SPI ×2 (tek kalem ya da 1+1); tek hat, ortak SCLK/MOSI/MISO, 2 CS; atandi",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "SPI",
+      "SPI"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z21",
+   "kategori": "spi",
+   "metin": "Yedi SPI sensörünü aynı hatta bağlayacağım.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "SPI ×7; mumkun_degil; neden: CS sınırı 6 (kaynaklı)",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "SPI",
+      "SPI",
+      "SPI",
+      "SPI",
+      "SPI",
+      "SPI",
+      "SPI"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "mumkun_degil"
+  },
+  {
+   "id": "Z22",
+   "kategori": "spi",
+   "metin": "Üç SPI cihazım var: iki MAX31855 termokupl okuyucu ve bir flash bellek modülü.",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "SPI ×3 (2+1 olabilir); tek hat, 3 CS; atandi; \"flash bellek modülü\" bağlam listesine girmez, BAGLAM_CELISKI ya da DIGER_BAGLAM çıkmaz",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "SPI",
+      "SPI",
+      "SPI"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z23",
+   "kategori": "sayi",
+   "metin": "Yirmi beş LED'i tek tek yakacağım.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "GPIO_OUT 25; mumkun_degil; neden metninde toplam 25",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "mumkun_degil"
+  },
+  {
+   "id": "Z24",
+   "kategori": "sayi",
+   "metin": "On dört butonu ayrı ayrı okuyacağım.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "GPIO_IN 14; atandi",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z25",
+   "kategori": "emin_degilim",
+   "metin": "Bahçem için bir şeyler yapmak istiyorum.",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "emin_degilim; eksik: cihaz_belirsiz; neden + \"ne yazmalısın\"",
+   "kabul": [
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null,
+     "eksik_icerir": [
+      "cihaz_belirsiz"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atama_yok"
+  },
+  {
+   "id": "Z26",
+   "kategori": "emin_degilim",
+   "metin": "Birkaç sensör bağlayacağım.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "emin_degilim; eksik içinde adet_belirsiz (cihaz_belirsiz / arayuz_belirsiz da olabilir)",
+   "kabul": [
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null,
+     "eksik_icerir": [
+      "adet_belirsiz"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atama_yok"
+  },
+  {
+   "id": "Z27",
+   "kategori": "desteklenmiyor",
+   "metin": "Ethernet PHY'yi RMII ile bağlayacağım.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "desteklenmiyor; durum mesajı + \"ne yazmalısın\"",
+   "kabul": [
+    {
+     "durum": "desteklenmiyor",
+     "ihtiyaclar": null
+    }
+   ],
+   "beklenen_sonuc": "atama_yok"
+  },
+  {
+   "id": "Z28",
+   "kategori": "baglam_diger",
+   "metin": "İki LDR ile ışık ölçeceğim. Proje güneş paneliyle beslenecek, kasası su geçirmez olacak.",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "ADC ×2; ikinci cümle diger_ifadeler'de; DIGER_IHTIYAC_IZI yok; bağlam boş",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z29",
+   "kategori": "baglam_diger",
+   "metin": "USB'yi programlama için kullanacağım. Üç LED süreceğim.",
+   "bayraklar": "--paket QFN40 --no-usb",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {
+    "usb_serial_jtag": false
+   },
+   "beklenen": "GPIO_OUT 3; ilk cümle baglam_ifadeleri'nde; BAGLAM_CELISKI uyarısı (komut satırı esas)",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z30",
+   "kategori": "baglam_diger",
+   "metin": "Durum LED'ini GPIO24'e bağla.",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "GPIO_OUT, tercih GPIO24; tercih_uygulanamadi (flash pini) + neden + öneri + ALTERNATİF",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT"
+     ],
+     "pin_tercihleri": [
+      {
+       "arayuz": "GPIO_OUT",
+       "sinyal": null,
+       "gpio": 24
+      }
+     ]
+    }
+   ],
+   "beklenen_sonuc": "tercih_uygulanamadi"
+  },
+  {
+   "id": "Z31",
+   "kategori": "baglam_diger",
+   "metin": "Bir röle süreceğim. Annem de bu projeyi merak ediyor.",
+   "bayraklar": "--paket QFN32",
+   "paket": "QFN32",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "GPIO_OUT ×1; ikinci cümle diger_ifadeler'de, YA DA hiçbir listede değilse KAPSANMAYAN_CUMLE uyarısı; sessiz kayıp yanlış",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  },
+  {
+   "id": "Z32",
+   "kategori": "karisik",
+   "metin": "Bir I2C ekran ve bir I2C sıcaklık sensörü kullanacağım. GPIO6 ve GPIO7 I2C için uygun mu?",
+   "bayraklar": "--paket QFN40",
+   "paket": "QFN40",
+   "kart": null,
+   "baglam": {},
+   "beklenen": "I2C ×2 (paylaşımlı hat); soru: pin_islevi ya da pin_kisiti (ya da arayuz_pinleri); GPIO6/7 tercih değil; atandi",
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C",
+      "I2C"
+     ],
+     "sorular": [
+      [
+       "pin_islevi",
+       "pin_kisiti",
+       "arayuz_pinleri"
+      ]
+     ]
+    }
+   ],
+   "beklenen_sonuc": "atandi"
+  }
+ ]
+}

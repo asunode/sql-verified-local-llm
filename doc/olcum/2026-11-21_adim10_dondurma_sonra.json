@@ -1,0 +1,72 @@
+{
+ "zaman": "2026-11-21 12:24:19 +0300",
+ "dosyalar": {
+  "src/pinsecim/istemler/atama_sistem.txt": "f09040e1f110af265f4f47e90193cf868b6cca5c504ccabe8741fe38b6bbfce6",
+  "src/pinsecim/istemler/ihtiyac_sistem.txt": "d84378b3050ce4d95e2a3d483889c9d8cb7dad11cb855bc5c795490e037b25a5",
+  "src/pinsecim/semalar.py": "6a489da20b6cb311d3f2a8a9cd3cd6ca9933eae747a595419e288b7f374c90a0",
+  "src/pinsecim/cagrilar.py": "28d7361494298e9d73af71217b2e3c2869f0b8bc5f1a020401e9c97e2b7f49d5",
+  "src/pinsecim/hat.py": "71e00885a2c1b59cd443be2dec4a432ae6142db3c1b0e3b6c237dba16e3de1d9",
+  "src/pinsecim/denetim.py": "60158f712538d5bc20476906eb71b7e8169398aaea3b33ae481976362f41a13f",
+  "src/pinsecim/atayici.py": "a351da512a26e6d0505b31c4ff26b4cd27fc953ef9db705c9af338a18761122c",
+  "src/pinsecim/pinveri.py": "c9af6a9e3fec674af087d279dc970a0774e70f75295446fca957c7c5bba38bc8",
+  "src/pinsecim/sozluk.py": "2bbe76fc3e9dd689de1596a7a072c96bb255d99ee9ba698229d5a7f42098d765",
+  "src/pinsecim/kural_verisi.py": "a870f86a3400dfa002281ab4fd68b44eeb43fe325941e36682bb984c5fd2e247",
+  "setler/dogrulama/dogrulama_seti_v1.json": "12211f6eccea718a80d8cce76813ae85a710a4048995334f4f8090677f393908",
+  "setler/gelistirme/gelistirme_seti.json": "b5434c6d17ea5ef2bdf17c3968e5a5cba350babd45cf976883179131d0666f38",
+  "testler/veri/denetim_vakalari.json": "0a1422c966583a9896698aabf85425851a745323eb57d3e3c47876e0c602b727",
+  "src/pinsecim/cevap.py": "31d20ef9e1cf7665340e1c9628b27f0e007123ca6cf177dbee1329abef5d1f3b",
+  "src/pinsecim/__main__.py": "10574459468ca8fa578f0a2148e2125dc6064934418d60038a0b1e00fc730dda",
+  "src/pinsecim/kapsamli.py": "975736f497ad7b1fec17cd04d5c665b907124dd545bb590ac40ff38415b179f3",
+  "src/pinsecim/dogrulama.py": "457316355bd4f79ad84f4a6d0b8ad09660b8861f0ad884b41a7bf5e18001b991",
+  "sql/006_pin_tercihleri.sql": "2e3cc8ff4172c17a5bd19a5363d3be3e800242bda66f21b190383b93fb9de151",
+  "sql/007_soru_mesaj.sql": "e2e6d18892a9e341f39128facd0f64d2a71c5231552245f75ec9237ca41dd757",
+  "setler/dogrulama/kapsamli_set_v3.json": "2497ff34e7d8c97d772b6cf696343d6daf37fed80675d7bc8f5594a6741d8967",
+  "setler/dogrulama/test_seti_v4.json": "3c449e7cf9cc89b2fa612f6c4a15fb00d69d000462840816831738d60c69df07"
+ },
+ "tablolar": {
+  "kural": {
+   "satir": 17,
+   "sha256": "2af81694b0086f990550d2c21a6eaafd7ee649ef272f09532cfc0b6963c6d203"
+  },
+  "cevre_adet": {
+   "satir": 10,
+   "sha256": "4b5b11e6f6e00d1a86f6a4f698bdec1aadb798e6505c31d5a1b0554dc2f6280d"
+  },
+  "arayuz_tanimi": {
+   "satir": 13,
+   "sha256": "2148d7a09705b570956e488ce8c770ac666928023a3159dd848fa85f4d379310"
+  },
+  "arayuz_sinyal": {
+   "satir": 6,
+   "sha256": "857c002a27612b7fb8c6addf8bc2a4e76809aea8d8fe8633ab646b8a7d58c7a6"
+  },
+  "yorum": {
+   "satir": 1,
+   "sha256": "7f226c6475d6a48aab97d1abb3bd128e483f719857370301d84a1aad0738f751"
+  },
+  "sayi_sozcugu": {
+   "satir": 27,
+   "sha256": "d796bb6a9e9d1a62790f0cdde5cb7fa35af2a4382000cdf8bd5a79bbd8eb22ae"
+  },
+  "baglam_sozcugu": {
+   "satir": 21,
+   "sha256": "90f1c7e9b23dad3cd5d8b04329938b43a8c8bd18b72291a23685e94c8d8f7cc9"
+  },
+  "pin_bahsi_deseni": {
+   "satir": 5,
+   "sha256": "856b0320fec3e37097d9aff5ee233da9554f276ce80163ee7e4fdaa657ebaee4"
+  },
+  "soru_konusu": {
+   "satir": 8,
+   "sha256": "9976083de60ef50386c1816f7962e0408adae20e5827922b4aa5b75ce539f8bc"
+  },
+  "durum_mesaji": {
+   "satir": 12,
+   "sha256": "b21051a3c13597cb224b1e1df75fcc1e4779d0b61bd5f6391a6bcd47165cbb7a"
+  }
+ },
+ "commit": {
+  "localllm_ass1": "f83c622",
+  "asu_llmcore": "41e2198"
+ }
+}

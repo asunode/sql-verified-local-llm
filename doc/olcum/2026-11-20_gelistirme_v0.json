@@ -1,0 +1,801 @@
+{
+ "surum": "v0",
+ "istemler": {
+  "atama_sistem.txt": "f09040e1f110",
+  "ihtiyac_sistem.txt": "a091cdfe0aa4"
+ },
+ "zaman": "2026-11-20 10:31:15 +0300",
+ "satirlar": [
+  {
+   "id": "G01",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "I2C",
+    "SPI"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "I2C",
+     "SPI"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 21.29,
+    "cagri_b": 50.9,
+    "atayici": 0.0,
+    "toplam": 72.19
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G02",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "ADC",
+    "ADC",
+    "PWM"
+   ],
+   "a_model_cikarimi": 2,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC",
+     "ADC",
+     "PWM"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 26.47,
+    "cagri_b": 42.05,
+    "atayici": 0.0,
+    "toplam": 68.52
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G03",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "UART",
+    "WAKE"
+   ],
+   "a_model_cikarimi": 1,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "UART",
+     "WAKE"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 20.15,
+    "cagri_b": 40.24,
+    "atayici": 0.0,
+    "toplam": 60.4
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G04",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "GPIO_IN",
+    "GPIO_IN",
+    "I2S_IN"
+   ],
+   "a_model_cikarimi": 1,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "GPIO_IN",
+     "I2S_IN"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 25.57,
+    "cagri_b": 49.54,
+    "atayici": 0.0,
+    "toplam": 75.11
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G05",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "GPIO_IN",
+    "GPIO_IN",
+    "GPIO_OUT",
+    "GPIO_OUT",
+    "GPIO_OUT",
+    "GPIO_OUT"
+   ],
+   "a_model_cikarimi": 2,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "GPIO_IN",
+     "GPIO_OUT",
+     "GPIO_OUT",
+     "GPIO_OUT",
+     "GPIO_OUT"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 43.59,
+    "cagri_b": 53.82,
+    "atayici": 0.001,
+    "toplam": 97.41
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G06",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "TWAI",
+    "TWAI",
+    "UART"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "TWAI",
+     "TWAI",
+     "UART"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 25.79,
+    "cagri_b": 52.21,
+    "atayici": 0.001,
+    "toplam": 78.0
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G07",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "TWAI",
+    "TWAI",
+    "TWAI"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "TWAI",
+     "TWAI",
+     "TWAI"
+    ],
+    "not": "adet aşımı: çözüm yok beklenir"
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "mumkun_degil",
+   "atayici_karar": "mumkun_degil",
+   "atayici_neden": "ADET: TWAI için 3 ihtiyaç var, kullanılabilir 2 (TWAI; ESP32-C6 Datasheet v1.6, Features (Peripherals) p.4)",
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 25.2,
+    "cagri_b": 24.93,
+    "atayici": 0.0,
+    "toplam": 50.14
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G08",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "ADC",
+    "ADC",
+    "ADC",
+    "ADC",
+    "ADC",
+    "ADC",
+    "ADC",
+    "ADC"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC"
+    ],
+    "not": "adet aşımı: çözüm yok beklenir"
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "mumkun_degil",
+   "atayici_karar": "mumkun_degil",
+   "atayici_neden": "ADET: ADC için 8 ihtiyaç var, kullanılabilir 7 (ADC; ESP32-C6 Datasheet v1.6, 4.2.2.1 p.57)",
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 49.02,
+    "cagri_b": 27.38,
+    "atayici": 0.0,
+    "toplam": 76.4
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G09",
+   "a_dogru": true,
+   "a_durumu": "desteklenmiyor",
+   "a_tur": 1,
+   "a_ihtiyaclar": [],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "desteklenmiyor",
+    "ihtiyaclar": []
+   },
+   "b_sonuc": null,
+   "b_gecti_turu": null,
+   "b_tur": null,
+   "model_karar": null,
+   "atayici_karar": null,
+   "atayici_neden": null,
+   "karar_ayni": null,
+   "model_uyari": null,
+   "model_hata": null,
+   "atayici_uyari": null,
+   "sure_sn": {
+    "cagri_a": 10.44,
+    "toplam": 10.44
+   },
+   "b_hata_kodlari": null
+  },
+  {
+   "id": "G10",
+   "a_dogru": true,
+   "a_durumu": "desteklenmiyor",
+   "a_tur": 1,
+   "a_ihtiyaclar": [],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "desteklenmiyor",
+    "ihtiyaclar": []
+   },
+   "b_sonuc": null,
+   "b_gecti_turu": null,
+   "b_tur": null,
+   "model_karar": null,
+   "atayici_karar": null,
+   "atayici_neden": null,
+   "karar_ayni": null,
+   "model_uyari": null,
+   "model_hata": null,
+   "atayici_uyari": null,
+   "sure_sn": {
+    "cagri_a": 10.09,
+    "toplam": 10.09
+   },
+   "b_hata_kodlari": null
+  },
+  {
+   "id": "G11",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "I2C"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "I2C"
+    ],
+    "not": "iki sensör aynı I2C hattını paylaşır"
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 14.47,
+    "cagri_b": 29.97,
+    "atayici": 0.0,
+    "toplam": 44.43
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G12",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "GPIO_OUT",
+    "GPIO_OUT",
+    "SPI"
+   ],
+   "a_model_cikarimi": 2,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_OUT",
+     "GPIO_OUT",
+     "SPI"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 26.94,
+    "cagri_b": 52.25,
+    "atayici": 0.001,
+    "toplam": 79.19
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G13",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM"
+   ],
+   "a_model_cikarimi": 6,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 39.0,
+    "cagri_b": 52.39,
+    "atayici": 0.001,
+    "toplam": 91.39
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G14",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM",
+    "PWM"
+   ],
+   "a_model_cikarimi": 7,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM"
+    ],
+    "not": "adet aşımı: çözüm yok beklenir"
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "mumkun_degil",
+   "atayici_karar": "mumkun_degil",
+   "atayici_neden": "ADET: PWM için 7 ihtiyaç var, kullanılabilir 6 (LED_PWM; ESP32-C6 Datasheet v1.6, 4.2.1.9 p.55)",
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 44.24,
+    "cagri_b": 22.82,
+    "atayici": 0.0,
+    "toplam": 67.06
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G15",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "LP_I2C"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "LP_I2C"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 2,
+   "model_hata": 0,
+   "atayici_uyari": 2,
+   "sure_sn": {
+    "cagri_a": 15.52,
+    "cagri_b": 35.95,
+    "atayici": 0.0,
+    "toplam": 51.47
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G16",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "GPIO_IN",
+    "GPIO_IN",
+    "GPIO_OUT"
+   ],
+   "a_model_cikarimi": 3,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "GPIO_IN",
+     "GPIO_OUT"
+    ],
+    "alternatifler": [
+     [
+      "GPIO_IN",
+      "GPIO_IN",
+      "PWM"
+     ]
+    ],
+    "not": "aktif buzzer GPIO_OUT, pasif buzzer PWM; ikisi de kabul"
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 24.04,
+    "cagri_b": 34.11,
+    "atayici": 0.0,
+    "toplam": 58.14
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G17",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "ADC",
+    "ADC",
+    "ADC",
+    "ADC",
+    "I2C",
+    "PWM",
+    "PWM",
+    "SPI",
+    "UART"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "I2C",
+     "PWM",
+     "PWM",
+     "SPI",
+     "UART"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 5,
+   "model_hata": 0,
+   "atayici_uyari": 5,
+   "sure_sn": {
+    "cagri_a": 52.14,
+    "cagri_b": 121.1,
+    "atayici": 0.001,
+    "toplam": 173.24
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G18",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "UART",
+    "UART"
+   ],
+   "a_model_cikarimi": 2,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "UART",
+     "UART"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 18.31,
+    "cagri_b": 41.79,
+    "atayici": 0.0,
+    "toplam": 60.1
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G19",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "ADC"
+   ],
+   "a_model_cikarimi": 0,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC"
+    ],
+    "not": "Wi-Fi pin istemez"
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 15.15,
+    "cagri_b": 27.0,
+    "atayici": 0.0,
+    "toplam": 42.15
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  },
+  {
+   "id": "G20",
+   "a_dogru": true,
+   "a_durumu": "tamam",
+   "a_tur": 1,
+   "a_ihtiyaclar": [
+    "GPIO_IN",
+    "SPI"
+   ],
+   "a_model_cikarimi": 1,
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "SPI"
+    ]
+   },
+   "b_sonuc": "GECTI",
+   "b_gecti_turu": 1,
+   "b_tur": 1,
+   "model_karar": "atandi",
+   "atayici_karar": "atandi",
+   "atayici_neden": null,
+   "karar_ayni": true,
+   "model_uyari": 0,
+   "model_hata": 0,
+   "atayici_uyari": 0,
+   "sure_sn": {
+    "cagri_a": 21.8,
+    "cagri_b": 47.11,
+    "atayici": 0.0,
+    "toplam": 68.92
+   },
+   "b_hata_kodlari": [
+    []
+   ]
+  }
+ ]
+}

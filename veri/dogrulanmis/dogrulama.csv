@@ -1,0 +1,41 @@
+tablo,referans,sayfa,yontem,sonuc,ayrinti,kaynak
+pin,Figure 2-1,14,A ic capraz denetim,uyumlu,,c9bf7ece1098
+pin,Figure 2-2,15,A ic capraz denetim,uyumlu,,c9bf7ece1098
+gpio_kisit,2.3.5,25,A ic capraz denetim,uyumlu,,c9bf7ece1098
+cevre_birim_sinyal,Table 2-10,26,A ic capraz denetim,uyumlu,,c9bf7ece1098
+cevre_birim_sinyal,Table 2-11,27,A ic capraz denetim,"fark var, karara baglandi",QFN32 pin 9 cevre:SPI2:gpio: GPIO1 ≠ GPIO3,c9bf7ece1098
+gpio_kisit,Table 3-1,33,A ic capraz denetim,uyumlu,,c9bf7ece1098
+pin,Table 2-1,16,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+pin,Table 2-1,17,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+pin,Table 2-2,17,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+pin,Table 2-2,18,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+gpio_islev,Table 2-4,20,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+gpio_islev,Table 2-5,21,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+gpio_islev,Table 2-7,22,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+gpio_islev,Table 2-9,23,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+pin,Table 7-1,79,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+pin,Table 7-2,80,A-B karsilastirma,uyumlu,"Consolidated Pin Overview ile alan alan; QFN40 41, QFN32 33 pin; 0 fark",c9bf7ece1098
+cip,Table 1-1,13,gorsel denetim,uyumlu,"3 varyant, paket, gömülü flash, sıcaklık, revizyon görüntüyle aynı",c9bf7ece1098
+paket,Table 1-1,13,gorsel denetim,uyumlu,"3 varyant, paket, gömülü flash, sıcaklık, revizyon görüntüyle aynı",c9bf7ece1098
+pin,Figure 2-1,14,gorsel denetim,uyumlu,41 pin etiketi Table 2-1 ile aynı,c9bf7ece1098
+pin,Figure 2-2,15,gorsel denetim,uyumlu,33 pin etiketi Table 2-2 ile aynı (pin 9 etiketi döndürülmüş),c9bf7ece1098
+pin,Table 2-1,16,gorsel denetim,uyumlu,"pin 1–17: ad, tür, güç, reset ayarları, işlev kümeleri ve kalın küme aynı",c9bf7ece1098
+pin,"Table 2-1, Table 2-2",17,gorsel denetim,uyumlu,"Table 2-1 pin 18–41, Table 2-2 pin 1–15 aynı; dipnot 5 ve 6 işaretleri",c9bf7ece1098
+pin,Table 2-2,18,gorsel denetim,uyumlu,pin 16–33 aynı; dipnot 3–6 metni pin.dipnot ve varsayilan_surme_ma'ya işlendi,c9bf7ece1098
+gpio_islev,Table 2-4,20,gorsel denetim,uyumlu,"30 GPIO, F0–F2, türler, kalın varsayılanlar ve sarı/kırmızı vurgular aynı",c9bf7ece1098
+gpio_kisit,Table 2-4,20,gorsel denetim,uyumlu,"30 GPIO, F0–F2, türler, kalın varsayılanlar ve sarı/kırmızı vurgular aynı",c9bf7ece1098
+gpio_islev,Table 2-5,21,gorsel denetim,uyumlu,"22 GPIO, F0–F2, türler, kalın varsayılanlar ve vurgular aynı",c9bf7ece1098
+gpio_kisit,Table 2-5,21,gorsel denetim,uyumlu,"22 GPIO, F0–F2, türler, kalın varsayılanlar ve vurgular aynı",c9bf7ece1098
+gpio_islev,Table 2-7,22,gorsel denetim,uyumlu,"LP_GPIO0–7, F0–F1 aynı; LP_GPIO4/5 sarı",c9bf7ece1098
+gpio_islev,Table 2-9,23,gorsel denetim,uyumlu,"10 satır, iki paketin pin numaraları, F0–F1 ve vurgular aynı",c9bf7ece1098
+gpio_kisit,2.3.5,25,gorsel denetim,uyumlu,P3/P4 GPIO listeleri aynı,c9bf7ece1098
+cevre_birim_sinyal,Table 2-10,26,gorsel denetim,uyumlu,18 sütun × 41 satır; 387 dolu hücre aynı,c9bf7ece1098
+cevre_birim_sinyal,Table 2-11,27,gorsel denetim,"fark var, karara baglandi","17 sütun × 33 satır; 269 dolu hücre aynı; fark: pin 9 SPI2 'GPIO1 (P2)' belgede de böyle yazıyor (belirsiz, fark raporu)",c9bf7ece1098
+flash_pin,Table 2-16,32,gorsel denetim,uyumlu,"6 satır, üç SPI modu aynı",c9bf7ece1098
+gpio_kisit,Table 3-1,33,gorsel denetim,uyumlu,5 strapping pini ve varsayılanları aynı,c9bf7ece1098
+strapping_kombinasyon,Table 3-3,34,gorsel denetim,uyumlu,3 kombinasyon; SPI boot mode varsayılan (kalın),c9bf7ece1098
+gpio_kisit,3.4,36,gorsel denetim,uyumlu,GPIO15: dahili pull direnci yok notu aynı,c9bf7ece1098
+gpio_islev,Table 7-1,79,gorsel denetim,uyumlu,"çıkarma B kaynağı; A ile alan alan aynı, satır vurguları aynı",c9bf7ece1098
+pin,Table 7-1,79,gorsel denetim,uyumlu,"çıkarma B kaynağı; A ile alan alan aynı, satır vurguları aynı",c9bf7ece1098
+gpio_islev,Table 7-2,80,gorsel denetim,uyumlu,"çıkarma B kaynağı; A ile alan alan aynı, satır vurguları aynı",c9bf7ece1098
+pin,Table 7-2,80,gorsel denetim,uyumlu,"çıkarma B kaynağı; A ile alan alan aynı, satır vurguları aynı",c9bf7ece1098

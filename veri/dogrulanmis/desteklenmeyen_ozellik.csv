@@ -1,0 +1,7 @@
+aile,terim,es_adlar,harf_duyarli_adlar,aciklama_tr,kaynak,sayfa,referans
+ESP32-C6,DAC,dijital-analog dönüştürücü|dijital analog dönüştürücü,DAC,Dijital-analog dönüştürücü (DAC) yok.,c9bf7ece1098,4,Features (Peripherals) s. 4; 4.2 Peripherals s. 50–57: bu listede yok
+ESP32-C6,Dokunmatik sensör (touch),touch sensor|touch pin|dokunmatik pin,,Çipte dokunmatik (touch) sensör pini yok.,c9bf7ece1098,4,Features (Peripherals) s. 4; 4.2 Peripherals s. 50–57: bu listede yok
+ESP32-C6,Ethernet MAC,ethernet,RMII|MII,Ethernet MAC ve RMII/MII arayüzü yok.,c9bf7ece1098,4,Features (Peripherals) s. 4; 4.2 Peripherals s. 50–57: bu listede yok
+ESP32-C6,Kamera arayüzü,kamera arayüzü|camera interface|mipi csi,DVP,Kamera (DVP/MIPI CSI) arayüzü yok.,c9bf7ece1098,4,Features (Peripherals) s. 4; 4.2 Peripherals s. 50–57: bu listede yok
+ESP32-C6,SD/MMC host,sdmmc|sd/mmc host|sd host,,SD/MMC host denetleyicisi yok (yalnız SDIO slave).,c9bf7ece1098,4,Features (Peripherals) s. 4; 4.2 Peripherals s. 50–57: bu listede yok
+ESP32-C6,USB OTG / USB host,usb host|usb otg,OTG,USB OTG ve USB host denetleyicisi yok (yalnız USB Serial/JTAG).,c9bf7ece1098,4,Features (Peripherals) s. 4; 4.2 Peripherals s. 50–57: bu listede yok

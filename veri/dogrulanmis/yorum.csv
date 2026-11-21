@@ -1,0 +1,2 @@
+olgu_tablo,olgu_anahtar,yorum,deger,gerekce,kaynaklar,veren,tarih,kaynak
+cevre_birim_sinyal,"{""paket"": ""QFN32"", ""pin_no"": 9, ""cevre_birim"": ""SPI2""}",SPI2 sinyalleri GPIO matrisiyle GPIO3'e gider.,"{""gpio_no"": 3}","Aynı satırın (Table 2-11, pin 9) diğer GPIO matrisi hücreleri GPIO3 (P2). | Table 2-10'da (QFN40) aynı pinin SPI2 hücresi GPIO3 (P2). | 2.3.5'teki P2 tanımı: GPIO matrisi hücresi o pinin GPIO'sudur.",Table 2-11 s. 27 | Table 2-10 s. 26 | 2.3.5 s. 25,Web AI,2026-11-20,c9bf7ece1098

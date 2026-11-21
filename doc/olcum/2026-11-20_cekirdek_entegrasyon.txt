@@ -1,0 +1,24 @@
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.prefix, expected <proje>/.venv, got <proje>/.venv
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.exec_prefix, expected <proje>/.venv, got <proje>/.venv
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- <proje>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <asu_llmcore>
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 18 items / 16 deselected / 2 selected
+
+tests/test_ollama_entegrasyon.py::test_ayni_istek_iki_kez_birebir_ayni 
+[1] süre=12.047s sınır=1.558s istem_token=45 üretilen=60 digest=38044be4f923e5a55264ed7df4eaac2676651a905f735197c504045140c02bd3
+[1] ham='{\n  "renkler": [\n    "Red",\n    "Yellow",\n    "Blue"\n  ],\n  "aciklama": "Rainbows form when sunlight is refracted, reflected, and dispersed by water droplets in the atmosphere."\n}'
+
+[2] süre=11.872s sınır=1.375s istem_token=45 üretilen=60 digest=38044be4f923e5a55264ed7df4eaac2676651a905f735197c504045140c02bd3
+[2] ham='{\n  "renkler": [\n    "Red",\n    "Yellow",\n    "Blue"\n  ],\n  "aciklama": "Rainbows form when sunlight is refracted, reflected, and dispersed by water droplets in the atmosphere."\n}'
+PASSED
+tests/test_ollama_entegrasyon.py::test_araya_baska_istek_girince_de_ayni 
+[A1] istem_token=45 ham='{\n  "renkler": [\n    "Red",\n    "Yellow",\n    "Blue"\n  ],\n  "aciklama": "Rainbows form when sunlight is refracted, reflected, and dispersed by water droplets in the atmosphere."\n}'
+[B ] istem_token=47
+[A2] istem_token=45 ham='{\n  "renkler": [\n    "Red",\n    "Yellow",\n    "Blue"\n  ],\n  "aciklama": "Rainbows form when sunlight is refracted, reflected, and dispersed by water droplets in the atmosphere."\n}'
+PASSED
+
+================= 2 passed, 16 deselected in 65.51s (0:01:05) ==================

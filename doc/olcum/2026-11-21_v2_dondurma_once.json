@@ -1,0 +1,57 @@
+{
+ "zaman": "2026-11-21 00:41:09 +0300",
+ "dosyalar": {
+  "src/pinsecim/istemler/atama_sistem.txt": "f09040e1f110af265f4f47e90193cf868b6cca5c504ccabe8741fe38b6bbfce6",
+  "src/pinsecim/istemler/ihtiyac_sistem.txt": "164fa748b37b5e92d6ae8953e633db42906594a4ac9f1de730af71d3b380201d",
+  "src/pinsecim/semalar.py": "7f5a7f714fd7a22a73ea298adf5d9caa21b58bad74c43e3d2a7b3db27b5548b7",
+  "src/pinsecim/cagrilar.py": "92125ec2188d2ca8f9e9d89a6a4d428c30e15cb85bcc8fd53ff1d6e69dea489c",
+  "src/pinsecim/hat.py": "b4f7c250df137b23c973adfe62e1fcc841493c57a2b6fd5a507dbd12305e8af4",
+  "src/pinsecim/denetim.py": "4f42771b413dc2049d129e9000a9984fdeabcf65dc98f5a1197b4ddf23f13f3d",
+  "src/pinsecim/atayici.py": "e48574198742498dfe5a8768ffe8792895229942a2d140f13295cf60c89e41d5",
+  "src/pinsecim/pinveri.py": "213b7266b06e0a26f9db0d563e29dbc4d4cee103b25f9743c1f01248447cdf9d",
+  "src/pinsecim/sozluk.py": "40ecdba64965689e5674ea7239a4c80484d6b67f6cd614e5421832b7358e6180",
+  "src/pinsecim/kural_verisi.py": "63c1a95a9e0a6048fa6220a78a942c5da43b50abe91d67f382cfcae7f9c6495a",
+  "setler/dogrulama/dogrulama_seti_v1.json": "12211f6eccea718a80d8cce76813ae85a710a4048995334f4f8090677f393908",
+  "setler/gelistirme/gelistirme_seti.json": "b5434c6d17ea5ef2bdf17c3968e5a5cba350babd45cf976883179131d0666f38",
+  "testler/veri/denetim_vakalari.json": "0a1422c966583a9896698aabf85425851a745323eb57d3e3c47876e0c602b727",
+  "setler/dogrulama/dogrulama_seti_v2.json": "aff56f7240ae3835be79a5ab8944f86879e83c14b5847e273074063acc8adcc9"
+ },
+ "tablolar": {
+  "kural": {
+   "satir": 15,
+   "sha256": "da6756cd1a24a27ffecbee588f0cc357af726ac84a7d1de7ed7f66dfb4e46852"
+  },
+  "cevre_adet": {
+   "satir": 10,
+   "sha256": "4b5b11e6f6e00d1a86f6a4f698bdec1aadb798e6505c31d5a1b0554dc2f6280d"
+  },
+  "arayuz_tanimi": {
+   "satir": 13,
+   "sha256": "b16f1c83df21d49187b4cf902ac03a0b5b2674bfde89a82d849fc2c166847471"
+  },
+  "arayuz_sinyal": {
+   "satir": 6,
+   "sha256": "857c002a27612b7fb8c6addf8bc2a4e76809aea8d8fe8633ab646b8a7d58c7a6"
+  },
+  "yorum": {
+   "satir": 1,
+   "sha256": "7f226c6475d6a48aab97d1abb3bd128e483f719857370301d84a1aad0738f751"
+  },
+  "sayi_sozcugu": {
+   "satir": 27,
+   "sha256": "d796bb6a9e9d1a62790f0cdde5cb7fa35af2a4382000cdf8bd5a79bbd8eb22ae"
+  },
+  "baglam_sozcugu": {
+   "satir": 21,
+   "sha256": "90f1c7e9b23dad3cd5d8b04329938b43a8c8bd18b72291a23685e94c8d8f7cc9"
+  }
+ },
+ "commit": {
+  "localllm_ass1": "84edee4",
+  "asu_llmcore": "41e2198"
+ },
+ "ek_dosyalar": [
+  "setler/dogrulama/dogrulama_seti_v2.json"
+ ],
+ "not": "2026-11-20 v2 kaydından (561eb23) sonra: L-4 tam kat kuralı (T-39) ve SAYI_UYUSMAZ mesajı (cagrilar.py), \"çift yönlü\" istisnası (sozluk.py, kural_verisi.py, sayi_sozcugu 27 satır), dogrulama.py CLI ve dondurma seçenekleri; istemler aynı; v2 set dosyası donmuş kümeye eklendi."
+}

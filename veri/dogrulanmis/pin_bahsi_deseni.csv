@@ -1,0 +1,6 @@
+tur,desen,aciklama,kaynak
+belirsiz,"\b(\d{1,2})\.\s*pin",5. pin,"pilot tanımı (DAI, Adım 9; Web AI görevi), 2026-11-21"
+belirsiz,"\b(\d{1,2})\s*numarali\s+pin",5 numaralı pin,"pilot tanımı (DAI, Adım 9; Web AI görevi), 2026-11-21"
+belirsiz,"\bpin\s*(?:no\.?\s*)?(\d{1,2})(?!\d)","pin 5, pin no 5","pilot tanımı (DAI, Adım 9; Web AI görevi), 2026-11-21"
+gpio,"\b(?:gpio|io)[\s_-]?(\d{1,2})(?!\d)","GPIO5, gpio5, gpıo11, GPIO 5, IO4","pilot tanımı (DAI, Adım 9; Web AI görevi), 2026-11-21"
+liste_devami,"\s*(?:,\s*(?:ve\s+|veya\s+)?|\s+(?:ve|veya|ile)\s+)(\d{1,2})(?=\s*(?:$|[,.;:)'’]|ve\b|veya\b|ile\b|pin))","bir bahsin ardından virgül, 've', 'veya', 'ile' ile gelen çıplak sayı: GPIO19, 18, 20 ve 21; sayıdan sonra ad gelirse ('GPIO5, 3 LED') bahis değil","pilot tanımı (DAI, Adım 9; Web AI görevi), 2026-11-21"

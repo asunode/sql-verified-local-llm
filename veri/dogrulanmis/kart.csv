@@ -1,0 +1,4 @@
+kisa_ad,ad,surum,uretici,cip,modul,kaynak,sayfa,referans,dogrulama_durumu,not_
+SuperMini,ESP32-C6 Super Mini,,,ESP32-C6FH4,,248cabd39c6c,1,U1 ESP32-C6FH4,dogrulanmadi,"Üretici bulunamadı (çok satıcılı); sürümler arasında parça farkı olabilir (S4). Envanter (E1): ESP32-C6FH4, 4 MB dahili flash."
+nanoESP32-C6-v0.2,nanoESP32-C6,v0.2,MuseLab,ESP32-C6,ESP32-C6-WROOM-1,82c739f095c5,1,envanter satırı 1,dogrulanmadi,Sürüm kullanıcı envanterinden; v0.2 şematiği üretici deposunda (git geçmişi dahil) bulunamadı. Kart verileri v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı. 'v0.2' ESP32-C6 çip revizyonu (v0.0/v0.1/v0.2) da olabilir; doğrulanmadı.
+nanoESP32-C6-v1.0,nanoESP32-C6,v1.0,MuseLab,ESP32-C6,ESP32-C6-WROOM-1,a2ca1ca2112c,1,başlık bloğu; U1 ESP32-C6-WROOM-1,kaynak_belge,Modülün flash sürümü (N4/N8/N16) şematikte yok.

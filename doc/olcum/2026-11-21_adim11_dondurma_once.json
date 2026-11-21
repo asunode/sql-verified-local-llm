@@ -1,0 +1,89 @@
+{
+ "zaman": "2026-11-21 19:24:52 +0300",
+ "dosyalar": {
+  "src/pinsecim/istemler/atama_sistem.txt": "f09040e1f110af265f4f47e90193cf868b6cca5c504ccabe8741fe38b6bbfce6",
+  "src/pinsecim/istemler/ihtiyac_sistem.txt": "3ff741e27c2e7b41c548d21d6dfc3e029af5b7ed9d785803875e474164f0775a",
+  "src/pinsecim/semalar.py": "0b32f58616bb3b15a6f6467d9571b43997b6fe9d7d6f936592e606014444f9fb",
+  "src/pinsecim/cagrilar.py": "4b95fbdbdf8fef857208d61458c675aa9c7e986062e84c1746e759b1af222034",
+  "src/pinsecim/hat.py": "fa01432245bc79a5a022d86e56337149f7a8a801d90c1d5a08b3e8e17469f5ff",
+  "src/pinsecim/denetim.py": "06478b9a42b69571a0745bc39601d47d027fa213959ca315ecadf85c3cd714e8",
+  "src/pinsecim/atayici.py": "077c4c5660bce527de1328f7ab10ad6e6ab80847b7b0d7460e634a1d3132d2fe",
+  "src/pinsecim/pinveri.py": "779a3ccc6d0d1987b1b75fb242963b54adee202174c68061c0f334468f49e76d",
+  "src/pinsecim/sozluk.py": "462cba27199dc0cec9b115c86fe9ca3e6eb915c7c481798fec98e3832ea99f33",
+  "src/pinsecim/kural_verisi.py": "5701c0adce288a2eb146421660237580b35e3054eb83ed94235a05c135b4f443",
+  "setler/dogrulama/dogrulama_seti_v1.json": "12211f6eccea718a80d8cce76813ae85a710a4048995334f4f8090677f393908",
+  "setler/gelistirme/gelistirme_seti.json": "b5434c6d17ea5ef2bdf17c3968e5a5cba350babd45cf976883179131d0666f38",
+  "testler/veri/denetim_vakalari.json": "0a1422c966583a9896698aabf85425851a745323eb57d3e3c47876e0c602b727",
+  "setler/dogrulama/test_seti_v5.json": "e3f6aed3782e0effa84ad2bef90402badf0ef60551996b5f5384b6f3d264315e"
+ },
+ "tablolar": {
+  "kural": {
+   "satir": 21,
+   "sha256": "5012900cf279c27f587736f6a0bb22a5d72d0928bc9863c02b2d63e4ce45461f"
+  },
+  "cevre_adet": {
+   "satir": 12,
+   "sha256": "aa26a41c1c5bfa6ec2503181f0ee6cdc15e3a07ab475a7dfa36d1981e8cdd786"
+  },
+  "arayuz_tanimi": {
+   "satir": 15,
+   "sha256": "49f737ce9af87ce647a5f8b0c53b83f4fa32ce0558a68f411bc62da3286c82b3"
+  },
+  "arayuz_sinyal": {
+   "satir": 6,
+   "sha256": "857c002a27612b7fb8c6addf8bc2a4e76809aea8d8fe8633ab646b8a7d58c7a6"
+  },
+  "yorum": {
+   "satir": 1,
+   "sha256": "7f226c6475d6a48aab97d1abb3bd128e483f719857370301d84a1aad0738f751"
+  },
+  "sayi_sozcugu": {
+   "satir": 32,
+   "sha256": "fd46c900561a4c3bf274d44ced7b7c0366fbdc6cbc8e853c11d0bffa4b6df00c"
+  },
+  "baglam_sozcugu": {
+   "satir": 21,
+   "sha256": "90f1c7e9b23dad3cd5d8b04329938b43a8c8bd18b72291a23685e94c8d8f7cc9"
+  },
+  "pin_bahsi_deseni": {
+   "satir": 5,
+   "sha256": "856b0320fec3e37097d9aff5ee233da9554f276ce80163ee7e4fdaa657ebaee4"
+  },
+  "soru_konusu": {
+   "satir": 8,
+   "sha256": "f9058bac247444fae76f20c9bae5353ee726a39578b7ebb636d9f0bed0f175c8"
+  },
+  "durum_mesaji": {
+   "satir": 13,
+   "sha256": "97973536321c770abfc2a431a6de250d0e3dcf6f88f5ba38975ec668904d1198"
+  },
+  "arayuz_es_adi": {
+   "satir": 12,
+   "sha256": "1d6f18093d1197e2cf165708b155eceab0f9d19a16ca0b349b2b62b075ddc641"
+  },
+  "kart": {
+   "satir": 3,
+   "sha256": "b7bd70c0b87a415beb196e072f06ded57c795295525bf3bb813834e9c0248007"
+  },
+  "modul_pin": {
+   "satir": 29,
+   "sha256": "ad7e691882f7f947b2ed1dd1efff5a32f69bd5694cef417323e2f07012f896f6"
+  },
+  "kart_pin": {
+   "satir": 85,
+   "sha256": "3212eef64a8d7b4b209f4f6fb765e762c6de3a8c21e0d56b80bd2a4cd2dac969"
+  },
+  "kart_parca": {
+   "satir": 21,
+   "sha256": "728eee719965b4ae09f8588190f2d3b750d1b2f210c7223d84c6caf4b214d9bb"
+  }
+ },
+ "commit": {
+  "localllm_ass1": "894cf2d",
+  "asu_llmcore": "41e2198"
+ },
+ "ek_dosyalar": [
+  "setler/dogrulama/test_seti_v5.json"
+ ],
+ "not": "Adım 11: adim10c kaydından (e9bab31) sonra. İstem ve sistem metni aynı. Değişen: cagrilar.py (KAPSANMAYAN_CUMLE uyarısı), __main__.py (uyarı görünür), kapsamli.py (uyarı tablosu); yeni kapsam.py, tamolcum.py. v5 seti (Web AI) ölçülecek."
+}

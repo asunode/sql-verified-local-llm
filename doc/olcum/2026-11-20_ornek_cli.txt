@@ -1,0 +1,24 @@
+İstek: Bir sıcaklık-nem sensörünü I2C üzerinden okuyup, iki röleyi açıp kapatacağım ve bir buzzer'ı PWM ile öttüreceğim.
+Paket: QFN32 · bağlam: usb_serial_jtag=evet, uart0_konsol=evet, jtag_pinleri=hayır, harici_flash_beslemesi=hayır
+
+1) İhtiyaçlar (model, 1. turda geçti):
+   - I2C       «I2C üzerinden okuyup»
+   - GPIO_OUT  «iki röleyi açıp kapatacağım»  [model çıkarımı — kontrol edin]
+   - GPIO_OUT  «iki röleyi açıp kapatacağım»  [model çıkarımı — kontrol edin]
+   - PWM       «buzzer'ı PWM ile öttüreceğim»
+
+2) Atama (model):
+   Sonuç: 1. turda denetimden geçti; durum = atandi
+   Gerekçe: Tüm sinyaller için uygun boş GPIO pinleri başarıyla atanmıştır.
+   İhtiyaç      Sinyal GPIO    Pinin durumu
+   i2c_1        SDA    GPIO0   serbest
+   i2c_1        SCL    GPIO1   serbest
+   gpio_out_1   OUT    GPIO2   serbest
+   gpio_out_2   OUT    GPIO3   serbest
+   pwm_1        OUT    GPIO14  serbest
+
+3) Uyarı yok.
+
+Kod atayıcıyla mümkün/imkânsız kararı: aynı (atayıcı: atandi)
+
+Süre: 80.48 sn (cagri_a 34.39, cagri_b 46.08, atayici 0.0)

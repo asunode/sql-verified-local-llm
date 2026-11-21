@@ -1,0 +1,9 @@
+sira,konu,model_tanimi,cevap_turu,gereken,tablolar,kaynak
+1,pin_islevi,what functions a given GPIO has,tablo,gpio,gpio_islev (Table 2-4…2-9),"pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+2,pin_kisiti,"restrictions or special roles of a given GPIO (strapping, flash, USB, JTAG, UART0 console)",tablo,gpio,"gpio_kisit, kural (2.3.5, Table 3-1)","pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+3,arayuz_pinleri,"which GPIOs a given interface (I2C, SPI, UART, ADC, …) can use",tablo,arayuz,"arayuz_tanimi, arayuz_sinyal, gpio_islev, cevre_birim_sinyal, kural","pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+4,paket_pinleri,which GPIOs the chip package has or which of them can be used,tablo,,"pin, gpio_kisit, kural","pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+5,kart_led,LEDs on a development board,kart,,"kart, kart_pin, kart_parca, modul_pin","pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+6,kart_buton,buttons on a development board,kart,,"kart, kart_pin, kart_parca, modul_pin","pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+7,kart_pin_cikisi,the header pins or pin labels of a development board,kart,,"kart, kart_pin, kart_parca, modul_pin","pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"
+8,diger,any other question,tabloda_yok,,,"pilot tanımı (Web AI görevi, DAI; Adım 10), 2026-11-21"

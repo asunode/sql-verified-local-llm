@@ -1,0 +1,7 @@
+paket,pin_no,pin_adi,gpio_no,tek_spi,cift_spi,dortlu_spi,kaynak,sayfa,referans
+QFN40,20,SPICS0,24,CS#,CS#,CS#,c9bf7ece1098,32,Table 2-16
+QFN40,21,SPIQ,25,MISO,SIO1,SIO1,c9bf7ece1098,32,Table 2-16
+QFN40,22,SPIWP,26,WP#,,SIO2,c9bf7ece1098,32,Table 2-16
+QFN40,24,SPIHD,28,HOLD#,,SIO3,c9bf7ece1098,32,Table 2-16
+QFN40,25,SPICLK,29,CLK,CLK,CLK,c9bf7ece1098,32,Table 2-16
+QFN40,26,SPID,30,MOSI,SIO0,SIO0,c9bf7ece1098,32,Table 2-16

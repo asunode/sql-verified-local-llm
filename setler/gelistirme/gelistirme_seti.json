@@ -1,0 +1,311 @@
+{
+ "aciklama": "Geliştirme seti — Web AI, 2026-11-20. Ayar yapmak serbesttir. Doğrudan istem örneği olarak kopyalanmaz. Atamanın mümkün olup olmadığına kod atayıcı karar verir; burada yalnız istekten çıkması beklenen ihtiyaçlar var (çoklu küme, sıra önemsiz). baglam alanı yalnız varsayılandan farklı değerleri içerir.",
+ "varsayilan_baglam": {
+  "usb_serial_jtag": true,
+  "uart0_konsol": true,
+  "jtag_pinleri": false,
+  "harici_flash_beslemesi": false
+ },
+ "istekler": [
+  {
+   "id": "G01",
+   "metin": "Bir BME280 sensörü (I2C) ve bir SD kart bağlayacağım; SD kartı SPI ile kullanacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "I2C",
+     "SPI"
+    ]
+   }
+  },
+  {
+   "id": "G02",
+   "metin": "İki potansiyometreyi okuyacağım ve bir LED'in parlaklığını ayarlayacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC",
+     "ADC",
+     "PWM"
+    ]
+   }
+  },
+  {
+   "id": "G03",
+   "metin": "GPS modülü UART ile bağlanacak. Bir butonla da cihazı derin uykudan uyandırmak istiyorum.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "UART",
+     "WAKE"
+    ]
+   }
+  },
+  {
+   "id": "G04",
+   "metin": "Bir INMP441 I2S mikrofon ve iki buton bağlayacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "GPIO_IN",
+     "I2S_IN"
+    ]
+   }
+  },
+  {
+   "id": "G05",
+   "metin": "Dört röle süreceğim, iki de kapı sensörüm (reed switch) var.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "GPIO_IN",
+     "GPIO_OUT",
+     "GPIO_OUT",
+     "GPIO_OUT",
+     "GPIO_OUT"
+    ]
+   }
+  },
+  {
+   "id": "G06",
+   "metin": "İki ayrı CAN (TWAI) hattı ve bir UART gerekiyor.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "TWAI",
+     "TWAI",
+     "UART"
+    ]
+   }
+  },
+  {
+   "id": "G07",
+   "metin": "Üç ayrı CAN hattı gerekiyor.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "TWAI",
+     "TWAI",
+     "TWAI"
+    ],
+    "not": "adet aşımı: çözüm yok beklenir"
+   }
+  },
+  {
+   "id": "G08",
+   "metin": "Sekiz analog sensör okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC"
+    ],
+    "not": "adet aşımı: çözüm yok beklenir"
+   }
+  },
+  {
+   "id": "G09",
+   "metin": "RMII üzerinden bir Ethernet PHY bağlamak istiyorum.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "desteklenmiyor",
+    "ihtiyaclar": []
+   }
+  },
+  {
+   "id": "G10",
+   "metin": "Bir OV2640 kamera modülü bağlayacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "desteklenmiyor",
+    "ihtiyaclar": []
+   }
+  },
+  {
+   "id": "G11",
+   "metin": "İki I2C sensörüm var: BME280 ve SHT31.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "I2C"
+    ],
+    "not": "iki sensör aynı I2C hattını paylaşır"
+   }
+  },
+  {
+   "id": "G12",
+   "metin": "SPI ile bir sensör okuyacağım ve iki LED yakıp söndüreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_OUT",
+     "GPIO_OUT",
+     "SPI"
+    ]
+   }
+  },
+  {
+   "id": "G13",
+   "metin": "Altı servo motoru PWM ile süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM"
+    ]
+   }
+  },
+  {
+   "id": "G14",
+   "metin": "Yedi LED'i ayrı ayrı PWM ile kısıp açacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM",
+     "PWM"
+    ],
+    "not": "adet aşımı: çözüm yok beklenir"
+   }
+  },
+  {
+   "id": "G15",
+   "metin": "Düşük güç modunda bir I2C sensörünü LP I2C üzerinden okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "LP_I2C"
+    ]
+   }
+  },
+  {
+   "id": "G16",
+   "metin": "USB'yi kullanmayacağım. İki buton ve bir buzzer var.",
+   "paket": "QFN32",
+   "baglam": {
+    "usb_serial_jtag": false
+   },
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "GPIO_IN",
+     "GPIO_OUT"
+    ],
+    "alternatifler": [
+     [
+      "GPIO_IN",
+      "GPIO_IN",
+      "PWM"
+     ]
+    ],
+    "not": "aktif buzzer GPIO_OUT, pasif buzzer PWM; ikisi de kabul"
+   }
+  },
+  {
+   "id": "G17",
+   "metin": "Bir UART, bir I2C, bir SPI, dört analog giriş ve iki PWM çıkışı.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC",
+     "ADC",
+     "ADC",
+     "ADC",
+     "I2C",
+     "PWM",
+     "PWM",
+     "SPI",
+     "UART"
+    ]
+   }
+  },
+  {
+   "id": "G18",
+   "metin": "UART0'ı konsol olarak kullanmayacağım. İki UART cihazım var: bir GPS ve bir modem.",
+   "paket": "QFN40",
+   "baglam": {
+    "uart0_konsol": false
+   },
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "UART",
+     "UART"
+    ]
+   }
+  },
+  {
+   "id": "G19",
+   "metin": "Wi-Fi ile veri gönderecek bir cihaz; analog çıkışlı tek bir sıcaklık sensörü okuyacak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "ADC"
+    ],
+    "not": "Wi-Fi pin istemez"
+   }
+  },
+  {
+   "id": "G20",
+   "metin": "Bir nRF24L01 modülü SPI ile bağlanacak, bir de kesme (interrupt) giriş pini lazım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "beklenen": {
+    "durum": "tamam",
+    "ihtiyaclar": [
+     "GPIO_IN",
+     "SPI"
+    ]
+   }
+  }
+ ]
+}

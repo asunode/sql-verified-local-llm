@@ -1,0 +1,570 @@
+{
+ "baslangic": "2026-11-20 09:28:48 +0300",
+ "istemler": {
+  "atama_sistem.txt": "f09040e1f110",
+  "ihtiyac_sistem.txt": "a091cdfe0aa4"
+ },
+ "kosular": {
+  "kosu1": [
+   {
+    "id": "G01",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"I2C\", \"dayanak\": \"BME280 sensörü (I2C)\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"SPI\", \"dayanak\": \"SD kartı SPI ile kullanacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest olan GPIO pinleri başarıyla atandı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SDA\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SCL\", \"gpio\": 1},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"SCLK\", \"gpio\": 2},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MOSI\", \"gpio\": 3},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MISO\", \"gpio\": 14},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"CS\", \"gpio\": 18}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 21.84,
+     "cagri_b": 52.29,
+     "atayici": 0.0,
+     "toplam": 74.13
+    }
+   },
+   {
+    "id": "G02",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"İki potansiyometreyi\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"İki potansiyometreyi\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"bir LED'in parlaklığını ayarlayacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"ADC sinyalleri için uygun olan ve serbest durumda bulunan GPIO0 ve GPIO1 kullanıldı, PWM sinyali için ise serbest durumdaki GPIO10 seçildi.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"adc_1\", \"sinyal\": \"AIN\", \"gpio\": 0},\n{\"ihtiyac_id\": \"adc_2\", \"sinyal\": \"AIN\", \"gpio\": 1},\n{\"ihtiyac_id\": \"pwm_1\", \"sinyal\": \"OUT\", \"gpio\": 10}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 26.3,
+     "cagri_b": 42.28,
+     "atayici": 0.0,
+     "toplam": 68.58
+    }
+   },
+   {
+    "id": "G03",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"UART\", \"dayanak\": \"UART ile bağlanacak\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"WAKE\", \"dayanak\": \"derin uykudan uyandırmak istiyorum\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Uart_1 sinyalleri için boşta olan GPIO14 ve GPIO18 kullanıldı, WAKE_1 sinyali için ise kısıtlamaya uygun olan GPIO0 seçildi.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 14},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 18},\n{\"ihtiyac_id\": \"wake_1\", \"sinyal\": \"IN\", \"gpio\": 0}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 20.09,
+     "cagri_b": 40.54,
+     "atayici": 0.0,
+     "toplam": 60.63
+    }
+   },
+   {
+    "id": "G04",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"I2S_IN\", \"dayanak\": \"INMP441 I2S mikrofon\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki buton\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki buton\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"BCLK\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"WS\", \"gpio\": 1},\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"DIN\", \"gpio\": 2},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 10}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 25.62,
+     "cagri_b": 50.19,
+     "atayici": 0.0,
+     "toplam": 75.81
+    }
+   },
+   {
+    "id": "G05",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki de kapı sensörüm\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki de kapı sensörüm\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atandı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"gpio_out_1\", \"sinyal\": \"OUT\", \"gpio\": 0},\n{\"ihtiyac_id\": \"gpio_out_2\", \"sinyal\": \"OUT\", \"gpio\": 1},\n{\"ihtiyac_id\": \"gpio_out_3\", \"sinyal\": \"OUT\", \"gpio\": 2},\n{\"ihtiyac_id\": \"gpio_out_4\", \"sinyal\": \"OUT\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 10},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 11}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 43.85,
+     "cagri_b": 54.23,
+     "atayici": 0.001,
+     "toplam": 98.08
+    }
+   },
+   {
+    "id": "G06",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"TWAI\", \"dayanak\": \"İki ayrı CAN (TWAI) hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"İki ayrı CAN (TWAI) hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"UART\", \"dayanak\": \"bir UART gerekiyor\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"twai_1\", \"sinyal\": \"TX\", \"gpio\": 0},\n{\"ihtiyac_id\": \"twai_1\", \"sinyal\": \"RX\", \"gpio\": 1},\n{\"ihtiyac_id\": \"twai_2\", \"sinyal\": \"TX\", \"gpio\": 2},\n{\"ihtiyac_id\": \"twai_2\", \"sinyal\": \"RX\", \"gpio\": 3},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 10},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 11}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 26.08,
+     "cagri_b": 52.61,
+     "atayici": 0.001,
+     "toplam": 78.69
+    }
+   },
+   {
+    "id": "G07",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n  \"gerekce\": \"TWAI arayüzü için maksimum limit 2 olarak belirtilmiş ancak 3 adet TWAI isteği bulunmaktadır.\",\n  \"durum\": \"mumkun_degil\",\n  \"atamalar\": []\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 25.23,
+     "cagri_b": 25.05,
+     "atayici": 0.0,
+     "toplam": 50.28
+    }
+   },
+   {
+    "id": "G08",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"İstenen ADC sayısı (8), belirlenen limit olan 7'den fazla olduğu için atama yapılamamaktadır.\",\n\"durum\": \"mumkun_degil\",\n\"atamalar\": []\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 49.25,
+     "cagri_b": 27.54,
+     "atayici": 0.0,
+     "toplam": 76.79
+    }
+   },
+   {
+    "id": "G09",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [], \"desteklenmeyenler\": [\"RMII üzerinden bir Ethernet PHY\"], \"durum\": \"desteklenmiyor\"}"
+    ],
+    "b": null,
+    "sure_sn": {
+     "cagri_a": 10.63,
+     "toplam": 10.63
+    }
+   },
+   {
+    "id": "G10",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [], \"desteklenmeyenler\": [\"OV2640 kamera modülü\"], \"durum\": \"desteklenmiyor\"}"
+    ],
+    "b": null,
+    "sure_sn": {
+     "cagri_a": 10.34,
+     "toplam": 10.34
+    }
+   }
+  ],
+  "kosu2": [
+   {
+    "id": "G01",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"I2C\", \"dayanak\": \"BME280 sensörü (I2C)\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"SPI\", \"dayanak\": \"SD kartı SPI ile kullanacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest olan GPIO pinleri başarıyla atandı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SDA\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SCL\", \"gpio\": 1},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"SCLK\", \"gpio\": 2},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MOSI\", \"gpio\": 3},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MISO\", \"gpio\": 14},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"CS\", \"gpio\": 18}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 21.32,
+     "cagri_b": 50.98,
+     "atayici": 0.0,
+     "toplam": 72.29
+    }
+   },
+   {
+    "id": "G02",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"İki potansiyometreyi\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"İki potansiyometreyi\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"bir LED'in parlaklığını ayarlayacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"ADC sinyalleri için uygun olan ve serbest durumda bulunan GPIO0 ve GPIO1 kullanıldı, PWM sinyali için ise serbest durumdaki GPIO10 seçildi.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"adc_1\", \"sinyal\": \"AIN\", \"gpio\": 0},\n{\"ihtiyac_id\": \"adc_2\", \"sinyal\": \"AIN\", \"gpio\": 1},\n{\"ihtiyac_id\": \"pwm_1\", \"sinyal\": \"OUT\", \"gpio\": 10}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 26.44,
+     "cagri_b": 42.47,
+     "atayici": 0.0,
+     "toplam": 68.91
+    }
+   },
+   {
+    "id": "G03",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"UART\", \"dayanak\": \"UART ile bağlanacak\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"WAKE\", \"dayanak\": \"derin uykudan uyandırmak istiyorum\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Uart_1 sinyalleri için boşta olan GPIO14 ve GPIO18 kullanıldı, WAKE_1 sinyali için ise kısıtlamaya uygun olan GPIO0 seçildi.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 14},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 18},\n{\"ihtiyac_id\": \"wake_1\", \"sinyal\": \"IN\", \"gpio\": 0}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 20.17,
+     "cagri_b": 40.74,
+     "atayici": 0.0,
+     "toplam": 60.91
+    }
+   },
+   {
+    "id": "G04",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"I2S_IN\", \"dayanak\": \"INMP441 I2S mikrofon\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki buton\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki buton\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"BCLK\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"WS\", \"gpio\": 1},\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"DIN\", \"gpio\": 2},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 10}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 25.87,
+     "cagri_b": 50.18,
+     "atayici": 0.001,
+     "toplam": 76.05
+    }
+   },
+   {
+    "id": "G05",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki de kapı sensörüm\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki de kapı sensörüm\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atandı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"gpio_out_1\", \"sinyal\": \"OUT\", \"gpio\": 0},\n{\"ihtiyac_id\": \"gpio_out_2\", \"sinyal\": \"OUT\", \"gpio\": 1},\n{\"ihtiyac_id\": \"gpio_out_3\", \"sinyal\": \"OUT\", \"gpio\": 2},\n{\"ihtiyac_id\": \"gpio_out_4\", \"sinyal\": \"OUT\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 10},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 11}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 43.82,
+     "cagri_b": 54.31,
+     "atayici": 0.001,
+     "toplam": 98.13
+    }
+   },
+   {
+    "id": "G06",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"TWAI\", \"dayanak\": \"İki ayrı CAN (TWAI) hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"İki ayrı CAN (TWAI) hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"UART\", \"dayanak\": \"bir UART gerekiyor\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"twai_1\", \"sinyal\": \"TX\", \"gpio\": 0},\n{\"ihtiyac_id\": \"twai_1\", \"sinyal\": \"RX\", \"gpio\": 1},\n{\"ihtiyac_id\": \"twai_2\", \"sinyal\": \"TX\", \"gpio\": 2},\n{\"ihtiyac_id\": \"twai_2\", \"sinyal\": \"RX\", \"gpio\": 3},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 10},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 11}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 26.06,
+     "cagri_b": 52.89,
+     "atayici": 0.001,
+     "toplam": 78.96
+    }
+   },
+   {
+    "id": "G07",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n  \"gerekce\": \"TWAI arayüzü için maksimum limit 2 olarak belirtilmiş ancak 3 adet TWAI isteği bulunmaktadır.\",\n  \"durum\": \"mumkun_degil\",\n  \"atamalar\": []\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 25.36,
+     "cagri_b": 24.76,
+     "atayici": 0.0,
+     "toplam": 50.12
+    }
+   },
+   {
+    "id": "G08",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"İstenen ADC sayısı (8), belirlenen limit olan 7'den fazla olduğu için atama yapılamamaktadır.\",\n\"durum\": \"mumkun_degil\",\n\"atamalar\": []\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 49.44,
+     "cagri_b": 27.56,
+     "atayici": 0.0,
+     "toplam": 77.0
+    }
+   },
+   {
+    "id": "G09",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [], \"desteklenmeyenler\": [\"RMII üzerinden bir Ethernet PHY\"], \"durum\": \"desteklenmiyor\"}"
+    ],
+    "b": null,
+    "sure_sn": {
+     "cagri_a": 10.28,
+     "toplam": 10.28
+    }
+   },
+   {
+    "id": "G10",
+    "araya_giren": null,
+    "a": [
+     "{\"ihtiyaclar\": [], \"desteklenmeyenler\": [\"OV2640 kamera modülü\"], \"durum\": \"desteklenmiyor\"}"
+    ],
+    "b": null,
+    "sure_sn": {
+     "cagri_a": 10.22,
+     "toplam": 10.22
+    }
+   }
+  ],
+  "kosu3": [
+   {
+    "id": "G01",
+    "araya_giren": {
+     "id": "G11",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"I2C\", \"dayanak\": \"I2C sensörüm var\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"I2C sinyalleri için boşta bulunan GPIO0 ve GPIO1 pinleri kullanılmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SDA\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SCL\", \"gpio\": 1}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"I2C\", \"dayanak\": \"BME280 sensörü (I2C)\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"SPI\", \"dayanak\": \"SD kartı SPI ile kullanacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest olan GPIO pinleri başarıyla atandı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SDA\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2c_1\", \"sinyal\": \"SCL\", \"gpio\": 1},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"SCLK\", \"gpio\": 2},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MOSI\", \"gpio\": 3},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MISO\", \"gpio\": 14},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"CS\", \"gpio\": 18}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 19.66,
+     "cagri_b": 42.51,
+     "atayici": 0.0,
+     "toplam": 62.17
+    }
+   },
+   {
+    "id": "G02",
+    "araya_giren": {
+     "id": "G12",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"SPI\", \"dayanak\": \"SPI ile bir sensör okuyacağım\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"iki LED yakıp söndüreceğim\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"iki LED yakıp söndüreceğim\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest pinler başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"SCLK\", \"gpio\": 0},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MOSI\", \"gpio\": 1},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MISO\", \"gpio\": 2},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"CS\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_out_1\", \"sinyal\": \"OUT\", \"gpio\": 10},\n{\"ihtiyac_id\": \"gpio_out_2\", \"sinyal\": \"OUT\", \"gpio\": 11}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"İki potansiyometreyi\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"İki potansiyometreyi\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"bir LED'in parlaklığını ayarlayacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"ADC sinyalleri için uygun olan ve serbest durumda bulunan GPIO0 ve GPIO1 kullanıldı, PWM sinyali için ise serbest durumdaki GPIO10 seçildi.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"adc_1\", \"sinyal\": \"AIN\", \"gpio\": 0},\n{\"ihtiyac_id\": \"adc_2\", \"sinyal\": \"AIN\", \"gpio\": 1},\n{\"ihtiyac_id\": \"pwm_1\", \"sinyal\": \"OUT\", \"gpio\": 10}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 23.97,
+     "cagri_b": 31.06,
+     "atayici": 0.0,
+     "toplam": 55.03
+    }
+   },
+   {
+    "id": "G03",
+    "araya_giren": {
+     "id": "G13",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"PWM\", \"dayanak\": \"Altı servo motoru\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Altı servo motoru\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Altı servo motoru\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Altı servo motoru\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Altı servo motoru\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Altı servo motoru\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"Tüm PWM sinyalleri için uygun ve serbest olan GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"pwm_1\", \"sinyal\": \"OUT\", \"gpio\": 0},\n{\"ihtiyac_id\": \"pwm_2\", \"sinyal\": \"OUT\", \"gpio\": 1},\n{\"ihtiyac_id\": \"pwm_3\", \"sinyal\": \"OUT\", \"gpio\": 2},\n{\"ihtiyac_id\": \"pwm_4\", \"sinyal\": \"OUT\", \"gpio\": 3},\n{\"ihtiyac_id\": \"pwm_5\", \"sinyal\": \"OUT\", \"gpio\": 10},\n{\"ihtiyac_id\": \"pwm_6\", \"sinyal\": \"OUT\", \"gpio\": 11}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"UART\", \"dayanak\": \"UART ile bağlanacak\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"WAKE\", \"dayanak\": \"derin uykudan uyandırmak istiyorum\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Uart_1 sinyalleri için boşta olan GPIO14 ve GPIO18 kullanıldı, WAKE_1 sinyali için ise kısıtlamaya uygun olan GPIO0 seçildi.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 14},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 18},\n{\"ihtiyac_id\": \"wake_1\", \"sinyal\": \"IN\", \"gpio\": 0}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 17.8,
+     "cagri_b": 38.26,
+     "atayici": 0.0,
+     "toplam": 56.07
+    }
+   },
+   {
+    "id": "G04",
+    "araya_giren": {
+     "id": "G14",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"Yedi LED'i\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n  \"gerekce\": \"PWM arayüzü için talep edilen sinyal sayısı (7), belirlenen maksimum sınır olan 6'yı aşmaktadır.\",\n  \"durum\": \"mumkun_degil\",\n  \"atamalar\": []\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"I2S_IN\", \"dayanak\": \"INMP441 I2S mikrofon\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki buton\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki buton\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"BCLK\", \"gpio\": 0},\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"WS\", \"gpio\": 1},\n{\"ihtiyac_id\": \"i2s_in_1\", \"sinyal\": \"DIN\", \"gpio\": 2},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 10}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 23.09,
+     "cagri_b": 47.64,
+     "atayici": 0.0,
+     "toplam": 70.73
+    }
+   },
+   {
+    "id": "G05",
+    "araya_giren": {
+     "id": "G15",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"LP_I2C\", \"dayanak\": \"LP I2C üzerinden okuyacağım\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"LP_I2C sinyalleri için sabitlenmiş pinler olan GPIO6 ve GPIO7 kullanıldı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"lp_i2c_1\", \"sinyal\": \"SDA\", \"gpio\": 6},\n{\"ihtiyac_id\": \"lp_i2c_1\", \"sinyal\": \"SCL\", \"gpio\": 7}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"Dört röle süreceğim\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki de kapı sensörüm\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"iki de kapı sensörüm\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atandı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"gpio_out_1\", \"sinyal\": \"OUT\", \"gpio\": 0},\n{\"ihtiyac_id\": \"gpio_out_2\", \"sinyal\": \"OUT\", \"gpio\": 1},\n{\"ihtiyac_id\": \"gpio_out_3\", \"sinyal\": \"OUT\", \"gpio\": 2},\n{\"ihtiyac_id\": \"gpio_out_4\", \"sinyal\": \"OUT\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 10},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 11}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 41.29,
+     "cagri_b": 42.7,
+     "atayici": 0.001,
+     "toplam": 83.99
+    }
+   },
+   {
+    "id": "G06",
+    "araya_giren": {
+     "id": "G16",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"GPIO_IN\", \"dayanak\": \"İki buton\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"İki buton\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"GPIO_OUT\", \"dayanak\": \"bir buzzer\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"İhtiyaçlar için uygun boş pinler kullanılarak atamalar yapıldı.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 0},\n{\"ihtiyac_id\": \"gpio_in_2\", \"sinyal\": \"IN\", \"gpio\": 1},\n{\"ihtiyac_id\": \"gpio_out_1\", \"sinyal\": \"OUT\", \"gpio\": 2}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"TWAI\", \"dayanak\": \"İki ayrı CAN (TWAI) hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"İki ayrı CAN (TWAI) hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"UART\", \"dayanak\": \"bir UART gerekiyor\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"twai_1\", \"sinyal\": \"TX\", \"gpio\": 0},\n{\"ihtiyac_id\": \"twai_1\", \"sinyal\": \"RX\", \"gpio\": 1},\n{\"ihtiyac_id\": \"twai_2\", \"sinyal\": \"TX\", \"gpio\": 2},\n{\"ihtiyac_id\": \"twai_2\", \"sinyal\": \"RX\", \"gpio\": 3},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 10},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 11}\n]\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 23.54,
+     "cagri_b": 50.14,
+     "atayici": 0.001,
+     "toplam": 73.68
+    }
+   },
+   {
+    "id": "G07",
+    "araya_giren": {
+     "id": "G17",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"UART\", \"dayanak\": \"Bir UART\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"I2C\", \"dayanak\": \"bir I2C\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"SPI\", \"dayanak\": \"bir SPI\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"dört analog giriş\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"dört analog giriş\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"dört analog giriş\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"dört analog giriş\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"iki PWM çıkışı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"PWM\", \"dayanak\": \"iki PWM çıkışı\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n  \"gerekce\": \"Tüm sinyaller için uygun ve kısıtlamalara uyan boş veya uyarı durumundaki pinler başarıyla atanmıştır.\",\n  \"durum\": \"atandi\",\n  \"atamalar\": [\n    {\n      \"ihtiyac_id\": \"uart_1\",\n      \"sinyal\": \"TX\",\n      \"gpio\": 14\n    },\n    {\n      \"ihtiyac_id\": \"uart_1\",\n      \"sinyal\": \"RX\",\n      \"gpio\": 18\n    },\n    {\n      \"ihtiyac_id\": \"i2c_1\",\n      \"sinyal\": \"SDA\",\n      \"gpio\": 19\n    },\n    {\n      \"ihtiyac_id\": \"i2c_1\",\n      \"sinyal\": \"SCL\",\n      \"gpio\": 20\n    },\n    {\n      \"ihtiyac_id\": \"spi_1\",\n      \"sinyal\": \"SCLK\",\n      \"gpio\": 21\n    },\n    {\n      \"ihtiyac_id\": \"spi_1\",\n      \"sinyal\": \"MOSI\",\n      \"gpio\": 22\n    },\n    {\n      \"ihtiyac_id\": \"spi_1\",\n      \"sinyal\": \"MISO\",\n      \"gpio\": 23\n    },\n    {\n      \"ihtiyac_id\": \"spi_1\",\n      \"sinyal\": \"CS\",\n      \"gpio\": 4\n    },\n    {\n      \"ihtiyac_id\": \"adc_1\",\n      \"sinyal\": \"AIN\",\n      \"gpio\": 0\n    },\n    {\n      \"ihtiyac_id\": \"adc_2\",\n      \"sinyal\": \"AIN\",\n      \"gpio\": 1\n    },\n    {\n      \"ihtiyac_id\": \"adc_3\",\n      \"sinyal\": \"AIN\",\n      \"gpio\": 2\n    },\n    {\n      \"ihtiyac_id\": \"adc_4\",\n      \"sinyal\": \"AIN\",\n      \"gpio\": 3\n    },\n    {\n      \"ihtiyac_id\": \"pwm_1\",\n      \"sinyal\": \"OUT\",\n      \"gpio\": 5\n    },\n    {\n      \"ihtiyac_id\": \"pwm_2\",\n      \"sinyal\": \"OUT\",\n      \"gpio\": 6\n    }\n  ]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"TWAI\", \"dayanak\": \"Üç ayrı CAN hattı\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n  \"gerekce\": \"TWAI arayüzü için talep edilen adet (3), izin verilen maksimum sınırı (2) aşmaktadır.\",\n  \"durum\": \"mumkun_degil\",\n  \"atamalar\": []\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 22.91,
+     "cagri_b": 30.08,
+     "atayici": 0.0,
+     "toplam": 52.99
+    }
+   },
+   {
+    "id": "G08",
+    "araya_giren": {
+     "id": "G18",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"UART\", \"dayanak\": \"bir GPS\", \"kaynak\": \"model_cikarimi\"}, {\"arayuz\": \"UART\", \"dayanak\": \"bir modem\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"Tüm UART sinyalleri için uygun ve serbest olan GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"TX\", \"gpio\": 0},\n{\"ihtiyac_id\": \"uart_1\", \"sinyal\": \"RX\", \"gpio\": 1},\n{\"ihtiyac_id\": \"uart_2\", \"sinyal\": \"TX\", \"gpio\": 2},\n{\"ihtiyac_id\": \"uart_2\", \"sinyal\": \"RX\", \"gpio\": 3}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"ADC\", \"dayanak\": \"Sekiz analog sensör\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+    ],
+    "b": [
+     "{\n\"gerekce\": \"İstenen ADC sayısı (8), belirlenen limit olan 7'den fazla olduğu için atama yapılamamaktadır.\",\n\"durum\": \"mumkun_degil\",\n\"atamalar\": []\n}"
+    ],
+    "sure_sn": {
+     "cagri_a": 46.9,
+     "cagri_b": 24.82,
+     "atayici": 0.0,
+     "toplam": 71.72
+    }
+   },
+   {
+    "id": "G09",
+    "araya_giren": {
+     "id": "G19",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"ADC\", \"dayanak\": \"analog çıkışlı tek bir sıcaklık sensörü\", \"kaynak\": \"istekte_acik\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"ADC AIN sinyali için uygun olan ve serbest durumda bulunan GPIO0 kullanılmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\n\"ihtiyac_id\": \"adc_1\",\n\"sinyal\": \"AIN\",\n\"gpio\": 0\n}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [], \"desteklenmeyenler\": [\"RMII üzerinden bir Ethernet PHY\"], \"durum\": \"desteklenmiyor\"}"
+    ],
+    "b": null,
+    "sure_sn": {
+     "cagri_a": 8.25,
+     "toplam": 8.25
+    }
+   },
+   {
+    "id": "G10",
+    "araya_giren": {
+     "id": "G20",
+     "a": [
+      "{\"ihtiyaclar\": [{\"arayuz\": \"SPI\", \"dayanak\": \"nRF24L01 modülü SPI ile bağlanacak\", \"kaynak\": \"istekte_acik\"}, {\"arayuz\": \"GPIO_IN\", \"dayanak\": \"kesme (interrupt) giriş pini lazım\", \"kaynak\": \"model_cikarimi\"}], \"desteklenmeyenler\": [], \"durum\": \"tamam\"}"
+     ],
+     "b": [
+      "{\n\"gerekce\": \"Tüm sinyaller için uygun ve serbest GPIO pinleri başarıyla atanmıştır.\",\n\"durum\": \"atandi\",\n\"atamalar\": [\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"SCLK\", \"gpio\": 0},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MOSI\", \"gpio\": 1},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"MISO\", \"gpio\": 2},\n{\"ihtiyac_id\": \"spi_1\", \"sinyal\": \"CS\", \"gpio\": 3},\n{\"ihtiyac_id\": \"gpio_in_1\", \"sinyal\": \"IN\", \"gpio\": 10}\n]\n}"
+     ]
+    },
+    "a": [
+     "{\"ihtiyaclar\": [], \"desteklenmeyenler\": [\"OV2640 kamera modülü\"], \"durum\": \"desteklenmiyor\"}"
+    ],
+    "b": null,
+    "sure_sn": {
+     "cagri_a": 8.69,
+     "toplam": 8.69
+    }
+   }
+  ]
+ },
+ "bitis": "2026-11-20 10:09:00 +0300",
+ "ozet": {
+  "a_k1_k2_ayni": [
+   10,
+   10
+  ],
+  "a_k1_k3_ayni": [
+   10,
+   10
+  ],
+  "b_k1_k2_ayni": [
+   8,
+   8
+  ],
+  "b_k1_k3_ayni": [
+   7,
+   8
+  ]
+ }
+}

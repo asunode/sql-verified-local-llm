@@ -1,0 +1,4 @@
+ad,aile,paket,gomulu_flash,sicaklik,revizyon,dipnot,kaynak,sayfa,referans
+ESP32-C6,ESP32-C6,QFN40,—,–40 ∼ 105 °C,v0.0/v0.1/v0.2,Table 1-1 dipnot 3,c9bf7ece1098,13,Table 1-1
+ESP32-C6FH4,ESP32-C6,QFN32,4 MB (Quad SPI),–40 ∼ 105 °C,v0.0/v0.1/v0.2,"Table 1-1 dipnot 4, 5",c9bf7ece1098,13,Table 1-1
+ESP32-C6FH8,ESP32-C6,QFN32,8 MB (Quad SPI),–40 ∼ 105 °C,v0.0/v0.1/v0.2,"Table 1-1 dipnot 4, 5",c9bf7ece1098,13,Table 1-1

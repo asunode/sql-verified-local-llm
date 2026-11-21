@@ -1,0 +1,36 @@
+a_atayici Z01 tamam - {'cagri_a': 125.06, 'toplam': 125.06}
+a_atayici Z02 tamam - {'cagri_a': 26.72, 'toplam': 26.72}
+a_atayici Z03 tamam - {'cagri_a': 25.55, 'toplam': 25.55}
+a_atayici Z04 tamam - {'cagri_a': 24.42, 'toplam': 24.43}
+a_atayici Z05 tamam - {'cagri_a': 25.15, 'toplam': 25.15}
+a_atayici Z06 tamam - {'cagri_a': 25.36, 'toplam': 25.36}
+a_atayici Z07 tamam - {'cagri_a': 25.35, 'toplam': 25.35}
+a_atayici Z08 tamam - {'cagri_a': 24.46, 'toplam': 24.46}
+a_atayici Z09 tamam atandi {'cagri_a': 38.87, 'atayici': 0.0, 'toplam': 38.87}
+a_atayici Z10 tamam atandi {'cagri_a': 32.01, 'atayici': 0.0, 'toplam': 32.01}
+a_atayici Z11 tamam - {'cagri_a': 25.36, 'toplam': 25.36}
+a_atayici Z12 tamam - {'cagri_a': 24.77, 'toplam': 24.77}
+a_atayici Z13 tamam - {'cagri_a': 24.51, 'toplam': 24.52}
+a_atayici Z14 tamam atandi {'cagri_a': 33.24, 'atayici': 0.001, 'toplam': 33.24}
+a_atayici Z15 tamam atandi {'cagri_a': 37.33, 'atayici': 0.0, 'toplam': 37.33}
+a_atayici Z16 tamam atandi {'cagri_a': 33.0, 'atayici': 0.0, 'toplam': 33.0}
+a_atayici Z17 tamam atandi {'cagri_a': 34.05, 'atayici': 0.0, 'toplam': 34.05}
+a_atayici Z18 tamam atandi {'cagri_a': 26.26, 'atayici': 0.0, 'toplam': 26.26}
+a_atayici Z19 tamam atandi {'cagri_a': 41.29, 'atayici': 0.0, 'toplam': 41.29}
+a_atayici Z20 tamam atandi {'cagri_a': 29.35, 'atayici': 0.001, 'toplam': 29.35}
+a_atayici Z21 tamam mumkun_degil {'cagri_a': 27.92, 'atayici': 0.0, 'toplam': 27.92}
+a_atayici Z22 tamam atandi {'cagri_a': 35.29, 'atayici': 0.001, 'toplam': 35.29}
+a_atayici Z23 tamam mumkun_degil {'cagri_a': 27.34, 'atayici': 0.005, 'toplam': 27.35}
+a_atayici Z24 tamam atandi {'cagri_a': 26.98, 'atayici': 0.002, 'toplam': 26.98}
+a_atayici Z25 emin_degilim - {'cagri_a': 21.67, 'toplam': 21.67}
+a_atayici Z26 emin_degilim - {'cagri_a': 21.63, 'toplam': 21.63}
+a_atayici Z27 tamam atandi {'cagri_a': 27.31, 'atayici': 0.001, 'toplam': 27.31}
+a_atayici Z28 tamam atandi {'cagri_a': 71.16, 'atayici': 0.0, 'toplam': 71.16}
+a_atayici Z29 tamam atandi {'cagri_a': 29.27, 'atayici': 0.0, 'toplam': 29.27}
+a_atayici Z30 tamam tercih_uygulanamadi {'cagri_a': 33.28, 'atayici': 0.0, 'toplam': 33.28}
+a_atayici Z31 tamam atandi {'cagri_a': 29.41, 'atayici': 0.0, 'toplam': 29.41}
+a_atayici Z32 tamam atandi {'cagri_a': 34.89, 'atayici': 0.0, 'toplam': 34.89}
+tekrar Z01 tamam - {'cagri_a': 24.68, 'toplam': 24.68}
+tekrar Z10 tamam atandi {'cagri_a': 31.78, 'atayici': 0.0, 'toplam': 31.78}
+tekrar Z20 tamam atandi {'cagri_a': 29.34, 'atayici': 0.001, 'toplam': 29.34}
+doc/olcum/2026-11-21_adim11_v5_ham.jsonl

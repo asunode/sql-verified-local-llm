@@ -1,0 +1,31 @@
+kosu1 G01 {'cagri_a': 21.84, 'cagri_b': 52.29, 'atayici': 0.0, 'toplam': 74.13}
+kosu1 G02 {'cagri_a': 26.3, 'cagri_b': 42.28, 'atayici': 0.0, 'toplam': 68.58}
+kosu1 G03 {'cagri_a': 20.09, 'cagri_b': 40.54, 'atayici': 0.0, 'toplam': 60.63}
+kosu1 G04 {'cagri_a': 25.62, 'cagri_b': 50.19, 'atayici': 0.0, 'toplam': 75.81}
+kosu1 G05 {'cagri_a': 43.85, 'cagri_b': 54.23, 'atayici': 0.001, 'toplam': 98.08}
+kosu1 G06 {'cagri_a': 26.08, 'cagri_b': 52.61, 'atayici': 0.001, 'toplam': 78.69}
+kosu1 G07 {'cagri_a': 25.23, 'cagri_b': 25.05, 'atayici': 0.0, 'toplam': 50.28}
+kosu1 G08 {'cagri_a': 49.25, 'cagri_b': 27.54, 'atayici': 0.0, 'toplam': 76.79}
+kosu1 G09 {'cagri_a': 10.63, 'toplam': 10.63}
+kosu1 G10 {'cagri_a': 10.34, 'toplam': 10.34}
+kosu2 G01 {'cagri_a': 21.32, 'cagri_b': 50.98, 'atayici': 0.0, 'toplam': 72.29}
+kosu2 G02 {'cagri_a': 26.44, 'cagri_b': 42.47, 'atayici': 0.0, 'toplam': 68.91}
+kosu2 G03 {'cagri_a': 20.17, 'cagri_b': 40.74, 'atayici': 0.0, 'toplam': 60.91}
+kosu2 G04 {'cagri_a': 25.87, 'cagri_b': 50.18, 'atayici': 0.001, 'toplam': 76.05}
+kosu2 G05 {'cagri_a': 43.82, 'cagri_b': 54.31, 'atayici': 0.001, 'toplam': 98.13}
+kosu2 G06 {'cagri_a': 26.06, 'cagri_b': 52.89, 'atayici': 0.001, 'toplam': 78.96}
+kosu2 G07 {'cagri_a': 25.36, 'cagri_b': 24.76, 'atayici': 0.0, 'toplam': 50.12}
+kosu2 G08 {'cagri_a': 49.44, 'cagri_b': 27.56, 'atayici': 0.0, 'toplam': 77.0}
+kosu2 G09 {'cagri_a': 10.28, 'toplam': 10.28}
+kosu2 G10 {'cagri_a': 10.22, 'toplam': 10.22}
+kosu3 G01 {'cagri_a': 19.66, 'cagri_b': 42.51, 'atayici': 0.0, 'toplam': 62.17}
+kosu3 G02 {'cagri_a': 23.97, 'cagri_b': 31.06, 'atayici': 0.0, 'toplam': 55.03}
+kosu3 G03 {'cagri_a': 17.8, 'cagri_b': 38.26, 'atayici': 0.0, 'toplam': 56.07}
+kosu3 G04 {'cagri_a': 23.09, 'cagri_b': 47.64, 'atayici': 0.0, 'toplam': 70.73}
+kosu3 G05 {'cagri_a': 41.29, 'cagri_b': 42.7, 'atayici': 0.001, 'toplam': 83.99}
+kosu3 G06 {'cagri_a': 23.54, 'cagri_b': 50.14, 'atayici': 0.001, 'toplam': 73.68}
+kosu3 G07 {'cagri_a': 22.91, 'cagri_b': 30.08, 'atayici': 0.0, 'toplam': 52.99}
+kosu3 G08 {'cagri_a': 46.9, 'cagri_b': 24.82, 'atayici': 0.0, 'toplam': 71.72}
+kosu3 G09 {'cagri_a': 8.25, 'toplam': 8.25}
+kosu3 G10 {'cagri_a': 8.69, 'toplam': 8.69}
+<proje>/doc/olcum/2026-11-20_onbellek.md

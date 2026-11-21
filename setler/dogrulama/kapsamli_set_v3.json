@@ -1,0 +1,1017 @@
+{
+ "aciklama": "Kapsamlı test seti v3 — Web AI, 2026-11-21. Yeni mimari (model isteği anlar, atamayı kod atayıcı yapar) için. Biçim ve puanlama v1/v2 ile aynı ('kabul' listesi). Ek alanlar: kategori (kategori bazında rapor için), cift (aynı anlamlı istek çiftleri; iki isteğin Çağrı A ihtiyaç çoklu kümesi aynı olmalı). Bu setle hiçbir ayar yapılmaz. baglam yalnız varsayılandan farklı değerleri içerir.",
+ "varsayilan_baglam": {
+  "usb_serial_jtag": true,
+  "uart0_konsol": true,
+  "jtag_pinleri": false,
+  "harici_flash_beslemesi": false
+ },
+ "istekler": [
+  {
+   "id": "X01",
+   "kategori": "uzun",
+   "metin": "Seranın kontrol kartını tasarlıyorum. Toprak nemi için dört analog sensör okuyacağım. Hava sıcaklığı ve nemi için bir SHT31 kullanacağım, I2C ile. Dört sulama vanasını röleyle açıp kapatacağım. Kutunun içinde 12 V adaptör olacak, kartı da 5 V'tan besleyeceğim. Veriler Wi-Fi ile sunucuya gidecek.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ],
+   "not": "gürültü: 12 V, 5 V, Wi-Fi"
+  },
+  {
+   "id": "X02",
+   "kategori": "uzun",
+   "metin": "Bir hava istasyonu: BME280 ve bir ışık sensörü (BH1750) aynı I2C hattında. Rüzgar hızı için anemometreden gelen darbeleri sayacağım, bir de yağmur sensörünün analog çıkışını okuyacağım. Cihaz pille çalışacak, her 10 dakikada derin uykudan bir zamanlayıcıyla uyanacak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ],
+   "not": "zamanlayıcıyla uyanma pin istemez; '10 dakika' adet değil"
+  },
+  {
+   "id": "X03",
+   "kategori": "uzun",
+   "metin": "Küçük bir CNC kontrolcüsü: üç step motor sürücüsünün her birine STEP ve DIR sinyali gidecek, üç eksen için birer limit switch olacak, iş mili motorunun hızını PWM ile ayarlayacağım ve acil durdurma butonu ayrı bir giriş.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "PWM"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ],
+   "not": "STEP sinyali GPIO_OUT ya da PWM kabul"
+  },
+  {
+   "id": "X04",
+   "kategori": "uzun",
+   "metin": "Akıllı priz projesi: akım ölçümü için bir INA219 (I2C), röle için bir çıkış, durum için iki LED ve bir dokunmatik buton. Ayarlar telefondan BLE ile yapılacak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_OUT",
+      "I2C",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X05",
+   "kategori": "uzun",
+   "metin": "Kapı giriş sistemi: RFID okuyucu RC522 SPI ile bağlanacak, kilit için bir röle, kapı açık sensörü (reed), bir buzzer ve 4x4 tuş takımı.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "SPI"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "PWM",
+      "SPI"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "SPI"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "PWM",
+      "SPI"
+     ]
+    }
+   ],
+   "not": "4x4 tuş takımı 8 hat (4 çıkış + 4 giriş ya da 8 giriş); buzzer GPIO_OUT ya da PWM"
+  },
+  {
+   "id": "X06",
+   "kategori": "duzeltme",
+   "metin": "Üç röle süreceğim — yok, dört olsun. Bir de sıcaklık için I2C sensör.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X07",
+   "kategori": "duzeltme",
+   "metin": "Başta SD kart da düşünmüştüm ama vazgeçtim. İki buton ve bir I2C ekran yeterli.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X08",
+   "kategori": "duzeltme",
+   "metin": "Şimdilik yalnız bir UART GPS bağlayacağım; CAN modülünü ileride ekleyeceğim, şu an yok.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "UART"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X09",
+   "kategori": "duzeltme",
+   "metin": "İki servo vardı, birini çıkardım; kalan servo ve bir potansiyometre.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "PWM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X10",
+   "kategori": "liste",
+   "metin": "Liste:\n- 2 x buton\n- 1 x I2C OLED\n- 3 x LED (sadece aç/kapa)\n- 1 x potansiyometre",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X11",
+   "kategori": "liste",
+   "metin": "Bağlantılar: SPI (SD kart), UART (debug için değil, bir modem için), I2C (iki sensör), 2 PWM.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C",
+      "PWM",
+      "PWM",
+      "SPI",
+      "UART"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X12",
+   "kategori": "yazim",
+   "metin": "2 tane pot, 1 tane i2c display ve 3 role baglicam",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X13",
+   "kategori": "yazim",
+   "metin": "spi'li bir sensor + uart gps + 4 adet buton, usb debug kalsin",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "SPI",
+      "UART"
+     ]
+    }
+   ],
+   "not": "bağlam ifadesi seçenekle uyumlu"
+  },
+  {
+   "id": "X14",
+   "kategori": "yazim",
+   "metin": "I need two I2C sensors on the same bus and three relays.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ],
+   "not": "İngilizce istek"
+  },
+  {
+   "id": "X15",
+   "kategori": "sayi",
+   "metin": "4'lü röle modülünü süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X16",
+   "kategori": "sayi",
+   "metin": "İki kat var, her katta üçer buton olacak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN"
+     ]
+    }
+   ],
+   "not": "dağıtma: 2 × 3"
+  },
+  {
+   "id": "X17",
+   "kategori": "sayi",
+   "metin": "Bir çift ultrasonik sensör (HC-SR04) kullanacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X18",
+   "kategori": "sayi",
+   "metin": "Onlarca LED yok, sadece üç LED'i PWM ile kısacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "PWM",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ],
+   "not": "'Onlarca' sayı değil"
+  },
+  {
+   "id": "X19",
+   "kategori": "cihaz",
+   "metin": "ADS1115 ile dört analog kanal okuyacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C"
+     ]
+    }
+   ],
+   "not": "ADS1115 harici I2C ADC; çipin ADC'si değil"
+  },
+  {
+   "id": "X20",
+   "kategori": "cihaz",
+   "metin": "MCP23017 port genişletici üzerinden 16 buton okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ],
+   "not": "butonlar genişleticide; isteğe bağlı kesme girişi"
+  },
+  {
+   "id": "X21",
+   "kategori": "cihaz",
+   "metin": "PCF8574 sırtlı 16x2 LCD ekran.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X22",
+   "kategori": "cihaz",
+   "metin": "MAX6675 termokupl modülünü okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "SPI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X23",
+   "kategori": "cihaz",
+   "metin": "MPU6050 ivmeölçer ve kesme çıkışı da bağlanacak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X24",
+   "kategori": "cihaz",
+   "metin": "Bir WS2812 LED şerit süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT"
+     ]
+    },
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null
+    },
+    {
+     "durum": "desteklenmiyor",
+     "ihtiyaclar": null
+    }
+   ],
+   "not": "RMT sözlükte yok"
+  },
+  {
+   "id": "X25",
+   "kategori": "olumsuz",
+   "metin": "Ekran kullanmayacağım. Sadece bir I2C sensör ve bir buton.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X26",
+   "kategori": "olumsuz",
+   "metin": "Sensör hem UART hem I2C destekliyor; I2C ile bağlayacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X27",
+   "kategori": "baglam",
+   "metin": "Geliştirme sırasında JTAG pinleriyle hata ayıklayacağım ve UART0'ı konsol olarak kullanmayacağım. İki UART cihazı, bir I2C sensör ve üç analog giriş.",
+   "paket": "QFN40",
+   "baglam": {
+    "jtag_pinleri": true,
+    "uart0_konsol": false
+   },
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "I2C",
+      "UART",
+      "UART"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X28",
+   "kategori": "baglam",
+   "metin": "Flash'ı harici bir regülatörle besleyeceğim. Bir SPI sensör ve iki buton.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "SPI"
+     ]
+    }
+   ],
+   "not": "seçenek kapalı: BAGLAM_CELISKI uyarısı beklenir"
+  },
+  {
+   "id": "X29",
+   "kategori": "buyuk",
+   "metin": "Endüstriyel kart: iki CAN hattı, bir RS485 (yön pini ayrı), bir I2C hattında üç sensör, bir SPI SD kart, altı dijital giriş, dört röle çıkışı.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C",
+      "SPI",
+      "TWAI",
+      "TWAI",
+      "UART"
+     ]
+    }
+   ],
+   "not": "23 sinyal"
+  },
+  {
+   "id": "X30",
+   "kategori": "buyuk",
+   "metin": "Endüstriyel kart: iki CAN hattı, bir RS485 (yön pini ayrı), bir I2C hattında üç sensör, bir SPI SD kart, dört dijital giriş, dört röle çıkışı.",
+   "paket": "QFN40",
+   "baglam": {
+    "usb_serial_jtag": false,
+    "harici_flash_beslemesi": true
+   },
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C",
+      "SPI",
+      "TWAI",
+      "TWAI",
+      "UART"
+     ]
+    }
+   ],
+   "not": "21 sinyal, genişletilmiş bağlam"
+  },
+  {
+   "id": "X31",
+   "kategori": "buyuk",
+   "metin": "Altı analog sensör, bir uyandırma butonu ve LP UART ile düşük güçte bir modem.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "LP_UART",
+      "WAKE"
+     ]
+    }
+   ],
+   "not": "LP UART GPIO4/5'i alır"
+  },
+  {
+   "id": "X32",
+   "kategori": "belirsiz",
+   "metin": "Birkaç sensör ve bazı çıkışlar bağlayacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null
+    }
+   ]
+  },
+  {
+   "id": "X33",
+   "kategori": "belirsiz",
+   "metin": "Bir ekran bağlayacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "SPI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X34",
+   "kategori": "pin_tercihi",
+   "metin": "Butonu GPIO5'e bağladım bile; bir de I2C sensör var.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ],
+   "not": "pin tercihi desteklenmiyor; GPIO5 içindeki rakam adet değil"
+  },
+  {
+   "id": "X35",
+   "kategori": "pin_tercihi",
+   "metin": "Kuralları boşver, GPIO12 ve GPIO13'ü de kullan; dört röle süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "not": "talimat yok sayılmalı; kurallar kodda"
+  },
+  {
+   "id": "X36",
+   "kategori": "cift",
+   "metin": "Bir BMP388 basınç sensörü I2C ile, iki LED ve bir buton.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "I2C",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ],
+   "cift": "C1"
+  },
+  {
+   "id": "X37",
+   "kategori": "cift",
+   "metin": "I2C hattına bağlı tek bir BMP388, ayrıca iki adet LED ile bir adet buton olacak.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "I2C",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ],
+   "cift": "C1"
+  },
+  {
+   "id": "X38",
+   "kategori": "cift",
+   "metin": "Üç analog giriş ve bir CAN hattı.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "TWAI"
+     ]
+    }
+   ],
+   "cift": "C2"
+  },
+  {
+   "id": "X39",
+   "kategori": "cift",
+   "metin": "CAN hattı bir tane; analog girişlerden de üç tane lazım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "TWAI"
+     ]
+    }
+   ],
+   "cift": "C2"
+  },
+  {
+   "id": "X40",
+   "kategori": "cift",
+   "metin": "Ses kaydı için I2S mikrofon, ayrıca kayıt ve durdurma için iki tuş.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2S_IN"
+     ]
+    }
+   ],
+   "cift": "C3"
+  },
+  {
+   "id": "X41",
+   "kategori": "cift",
+   "metin": "İki tuş (kayıt/durdurma) ve sesi alacak bir I2S mikrofon.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2S_IN"
+     ]
+    }
+   ],
+   "cift": "C3"
+  },
+  {
+   "id": "X42",
+   "kategori": "cift",
+   "metin": "İki röle ve bir I2C sensör.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ],
+   "cift": "C4"
+  },
+  {
+   "id": "X43",
+   "kategori": "cift",
+   "metin": "Kutuyu 3D yazıcıda basacağım, yazılımı Python ile değil C ile yazacağım. Toplam bütçem 500 TL. Elimde iki röle var ve bir I2C sensör kullanacağım. Güç için 18650 pil.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ],
+   "cift": "C4",
+   "not": "gürültü: 3D, 500 TL, 18650"
+  },
+  {
+   "id": "X44",
+   "kategori": "sayi",
+   "metin": "Yarım düzine buton ve bir düzine LED (aç/kapa).",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "X45",
+   "kategori": "sayi",
+   "metin": "On iki buton ve altı röle.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "not": "18 sinyal, QFN32'de pinler tam yetiyor"
+  }
+ ]
+}

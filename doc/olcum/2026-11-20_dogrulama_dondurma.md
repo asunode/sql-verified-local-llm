@@ -1,0 +1,36 @@
+# Doğrulama ölçümü dondurma kaydı — 2026-11-20
+
+Öncesi: 2026-11-20 16:18:30 +0300 · sonrası: 2026-11-20 18:28:01 +0300. Ham: `2026-11-20_dogrulama_dondurma_once.json`, `2026-11-20_dogrulama_dondurma_sonra.json`.
+
+## Dosyalar (SHA-256)
+
+| Dosya | Öncesi | Sonrası |
+|---|---|---|
+| `src/pinsecim/istemler/atama_sistem.txt` | `f09040e1f110af265f4f47e90193cf868b6cca5c504ccabe8741fe38b6bbfce6` | aynı |
+| `src/pinsecim/istemler/ihtiyac_sistem.txt` | `a091cdfe0aa48e95f682227e1c238f41fb1e67cdfd7183b54f7ce264dad0848b` | aynı |
+| `src/pinsecim/semalar.py` | `5db216022e223c4e2d310047f281527661e38215733ce94bbd293fec23bb5e83` | aynı |
+| `src/pinsecim/cagrilar.py` | `161f36c3942b748b88e7e0b07650307c2a51d0d99dca1a4f2bdc8454c5c51046` | aynı |
+| `src/pinsecim/hat.py` | `7a7f13915c43635192ca64668386d39a1be54f8b39c253aad6646c1c29cd7ea5` | aynı |
+| `src/pinsecim/denetim.py` | `4f42771b413dc2049d129e9000a9984fdeabcf65dc98f5a1197b4ddf23f13f3d` | aynı |
+| `src/pinsecim/atayici.py` | `e48574198742498dfe5a8768ffe8792895229942a2d140f13295cf60c89e41d5` | aynı |
+| `src/pinsecim/pinveri.py` | `213b7266b06e0a26f9db0d563e29dbc4d4cee103b25f9743c1f01248447cdf9d` | aynı |
+| `setler/dogrulama/dogrulama_seti_v1.json` | `12211f6eccea718a80d8cce76813ae85a710a4048995334f4f8090677f393908` | aynı |
+| `setler/gelistirme/gelistirme_seti.json` | `b5434c6d17ea5ef2bdf17c3968e5a5cba350babd45cf976883179131d0666f38` | aynı |
+| `testler/veri/denetim_vakalari.json` | `0a1422c966583a9896698aabf85425851a745323eb57d3e3c47876e0c602b727` | aynı |
+
+## Kural tabloları (satır sayısı, satırların SHA-256'sı)
+
+| Tablo | Satır | SHA-256 | Sonrası |
+|---|---|---|---|
+| `kural` | 15 | `da6756cd1a24a27ffecbee588f0cc357af726ac84a7d1de7ed7f66dfb4e46852` | aynı |
+| `cevre_adet` | 10 | `4b5b11e6f6e00d1a86f6a4f698bdec1aadb798e6505c31d5a1b0554dc2f6280d` | aynı |
+| `arayuz_tanimi` | 13 | `f134d79613f0d9cecab5f4a37b48be18d37b478e430ca9cfc76b2c88613fa730` | aynı |
+| `arayuz_sinyal` | 6 | `857c002a27612b7fb8c6addf8bc2a4e76809aea8d8fe8633ab646b8a7d58c7a6` | aynı |
+| `yorum` | 1 | `7f226c6475d6a48aab97d1abb3bd128e483f719857370301d84a1aad0738f751` | aynı |
+
+## Commit
+
+| Depo | Öncesi | Sonrası |
+|---|---|---|
+| localllm_ass1 | `87e6f38` | `87e6f38` |
+| asu_llmcore | `41e2198` | `41e2198` |

@@ -1,0 +1,608 @@
+{
+ "aciklama": "Görülmemiş doğrulama seti v2 — Web AI, 2026-11-21. Biçim ve puanlama v1 ile aynı ('kabul' listesi). Bu setle hiçbir ayar yapılmaz; ölçüm dondurulmuş sürümle yapılır. Atamanın mümkün olup olmadığına kod atayıcı karar verir. baglam yalnız varsayılandan farklı değerleri içerir.",
+ "varsayilan_baglam": {
+  "usb_serial_jtag": true,
+  "uart0_konsol": true,
+  "jtag_pinleri": false,
+  "harici_flash_beslemesi": false
+ },
+ "istekler": [
+  {
+   "id": "W01",
+   "metin": "Üç adet I2C sensörü aynı hatta bağlayacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C"
+     ]
+    }
+   ],
+   "not": "paylaşımlı hat: üç cihaz, tek I2C"
+  },
+  {
+   "id": "W02",
+   "metin": "İki rotary encoder kullanacağım, butonları yok.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN"
+     ]
+    }
+   ],
+   "not": "cihaz başına iki hat"
+  },
+  {
+   "id": "W03",
+   "metin": "Çift yönlü haberleşme için bir UART bağlantısı lazım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "UART"
+     ]
+    }
+   ],
+   "not": "'çift' sayı değil"
+  },
+  {
+   "id": "W04",
+   "metin": "8 röleyi ayrı ayrı süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ],
+   "not": "rakamla sayı"
+  },
+  {
+   "id": "W05",
+   "metin": "Üç potansiyometre ve iki LED.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    },
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W06",
+   "metin": "SDIO üzerinden bir Wi-Fi modülü bağlamak istiyorum.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "desteklenmiyor",
+     "ihtiyaclar": null
+    },
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null
+    }
+   ]
+  },
+  {
+   "id": "W07",
+   "metin": "Paralel arayüzlü 8 bitlik bir LCD bağlayacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "desteklenmiyor",
+     "ihtiyaclar": null
+    },
+    {
+     "durum": "emin_degilim",
+     "ihtiyaclar": null
+    }
+   ],
+   "not": "sözlükte paralel veri yolu yok; GPIO ile taklit edilmemeli"
+  },
+  {
+   "id": "W08",
+   "metin": "USB'yi kullanmayacağım; altı buton okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {
+    "usb_serial_jtag": false
+   },
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN"
+     ]
+    }
+   ],
+   "not": "bağlam ifadesi seçenekle uyumlu"
+  },
+  {
+   "id": "W09",
+   "metin": "USB üzerinden programlamayacağım, dört analog sensör okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC"
+     ]
+    }
+   ],
+   "not": "bağlam ifadesi seçenekle çelişiyor: BAGLAM_CELISKI uyarısı beklenir"
+  },
+  {
+   "id": "W10",
+   "metin": "Hiç donanım bağlamayacağım, yalnız BLE ile veri yayınlayacak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": []
+    }
+   ]
+  },
+  {
+   "id": "W11",
+   "metin": "İki uyandırma kaynağı olacak: bir hareket sensörü ve bir kapı kontağı; ikisi de cihazı derin uykudan uyandıracak.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "WAKE",
+      "WAKE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W12",
+   "metin": "Yedi analog kanal ve bir uyandırma butonu.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "WAKE"
+     ]
+    }
+   ],
+   "not": "GPIO0-7 tam dolu"
+  },
+  {
+   "id": "W13",
+   "metin": "Yedi analog kanal ve iki uyandırma butonu.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "WAKE",
+      "WAKE"
+     ]
+    }
+   ],
+   "not": "W12 + 1"
+  },
+  {
+   "id": "W14",
+   "metin": "Altı ADC kanalı ve LP I2C ile düşük güçte çalışan bir sensör.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "LP_I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W15",
+   "metin": "Yedi ADC kanalı ve LP I2C ile düşük güçte çalışan bir sensör.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "ADC",
+      "LP_I2C"
+     ]
+    }
+   ],
+   "not": "W14 + 1"
+  },
+  {
+   "id": "W16",
+   "metin": "İki TWAI hattı, iki UART ve bir I2C.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C",
+      "TWAI",
+      "TWAI",
+      "UART",
+      "UART"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W17",
+   "metin": "İki TWAI hattı, iki UART ve bir I2C.",
+   "paket": "QFN40",
+   "baglam": {
+    "uart0_konsol": false
+   },
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C",
+      "TWAI",
+      "TWAI",
+      "UART",
+      "UART"
+     ]
+    }
+   ],
+   "not": "W16 ile aynı metin, farklı bağlam"
+  },
+  {
+   "id": "W18",
+   "metin": "Bir SPI sensör, bir I2C hat, bir UART, dört PWM ve altı buton.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2C",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "SPI",
+      "UART"
+     ]
+    }
+   ],
+   "not": "pinler tam yetiyor"
+  },
+  {
+   "id": "W19",
+   "metin": "Bir SPI sensör, bir I2C hat, bir UART, dört PWM ve yedi buton.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2C",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "SPI",
+      "UART"
+     ]
+    }
+   ],
+   "not": "W18 + 1"
+  },
+  {
+   "id": "W20",
+   "metin": "Bir SPI sensör, bir I2C hat, bir UART, dört PWM ve yedi buton.",
+   "paket": "QFN32",
+   "baglam": {
+    "usb_serial_jtag": false
+   },
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2C",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "SPI",
+      "UART"
+     ]
+    }
+   ],
+   "not": "W19 ile aynı metin, farklı bağlam"
+  },
+  {
+   "id": "W21",
+   "metin": "Beş servo ve bir buzzer'ı PWM ile süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W22",
+   "metin": "Beş servo ve iki buzzer'ı PWM ile süreceğim.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W23",
+   "metin": "Bir HC-SR04 ve bir I2C OLED ekran.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_OUT",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W24",
+   "metin": "Bir I2S mikrofonla ses alıp bir I2C sensör okuyacağım.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "I2C",
+      "I2S_IN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W25",
+   "metin": "İki adet CAN hattı ve bir RS485 (MAX485, yön pini ayrı).",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_OUT",
+      "TWAI",
+      "TWAI",
+      "UART"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W26",
+   "metin": "Bir joystick (iki analog eksen, bir buton) ve bir I2S hoparlör amfisi.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "ADC",
+      "ADC",
+      "GPIO_IN",
+      "I2S_OUT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W27",
+   "metin": "JTAG pinleri üzerinden hata ayıklayacağım; iki I2C sensörü tek hatta ve üç buton.",
+   "paket": "QFN40",
+   "baglam": {
+    "jtag_pinleri": true
+   },
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "I2C"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W28",
+   "metin": "Bir Ethernet PHY ve iki buton.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "desteklenmiyor",
+     "ihtiyaclar": null
+    }
+   ],
+   "not": "karışık; desteklenmeyenler Ethernet'i içermeli"
+  },
+  {
+   "id": "W29",
+   "metin": "Sekiz ayrı LED'i PWM ile kısacağım.",
+   "paket": "QFN32",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM",
+      "PWM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W30",
+   "metin": "Bir düzine röle ve yarım düzine buton.",
+   "paket": "QFN40",
+   "baglam": {},
+   "kabul": [
+    {
+     "durum": "tamam",
+     "ihtiyaclar": [
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_IN",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT",
+      "GPIO_OUT"
+     ]
+    }
+   ]
+  }
+ ]
+}

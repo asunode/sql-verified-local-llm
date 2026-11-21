@@ -1,0 +1,13 @@
+es_ad,arayuz,harf_duyarli,kaynak
+analog,ADC,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+analog giriş,ADC,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+dijital giriş,GPIO_IN,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+dijital çıkış,GPIO_OUT,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+iic,I2C,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+i²c,I2C,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+adreslenebilir led,RMT_TX,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+neopixel,RMT_TX,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+ws2812,RMT_TX,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+CAN,TWAI,True,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+can bus,TWAI,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"
+seri haberleşme,UART,False,"pilot tanımı (Web AI görevi, DAI; Adım 10a), 2026-11-21"

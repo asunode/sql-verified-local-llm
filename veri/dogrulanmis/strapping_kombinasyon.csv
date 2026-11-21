@@ -1,0 +1,4 @@
+aile,islev,sonuc,pin_degerleri,varsayilan,dipnot,kaynak,sayfa,referans
+ESP32-C6,boot_modu,Invalid combination,"{""GPIO8"": ""0"", ""GPIO9"": ""0""}",False,Table 3-3 dipnot 3,c9bf7ece1098,34,Table 3-3
+ESP32-C6,boot_modu,Joint download boot mode,"{""GPIO8"": ""1"", ""GPIO9"": ""0""}",False,Table 3-3 dipnot 2,c9bf7ece1098,34,Table 3-3
+ESP32-C6,boot_modu,SPI boot mode,"{""GPIO8"": ""Any value"", ""GPIO9"": ""1""}",True,,c9bf7ece1098,34,Table 3-3

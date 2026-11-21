@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# Üçüncü taraf kaynak belgeler depoya girmez: python veri/kaynak/indir.py
+veri/kaynak/*.pdf
+veri/kaynak/*.indirilen
+# Büyük ikili dosyalar
+*.zip
+*.tar*
+*.gz
+*.7z
+*.bin
+*.gguf
+*.safetensors
+*.dump
+*.sqlite
+*.db
+*.png
+*.jpg

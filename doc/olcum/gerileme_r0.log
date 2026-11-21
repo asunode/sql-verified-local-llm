@@ -1,0 +1,52 @@
+model G01 tamam GECTI {'cagri_a': 26.15, 'cagri_b': 51.2, 'atayici': 0.0, 'toplam': 77.35}
+model G02 tamam GECTI {'cagri_a': 24.64, 'cagri_b': 42.51, 'atayici': 0.0, 'toplam': 67.15}
+model G03 tamam GECTI {'cagri_a': 25.34, 'cagri_b': 40.36, 'atayici': 0.0, 'toplam': 65.69}
+model G04 tamam GECTI {'cagri_a': 24.62, 'cagri_b': 50.04, 'atayici': 0.0, 'toplam': 74.66}
+model G05 tamam GECTI {'cagri_a': 24.56, 'cagri_b': 54.29, 'atayici': 0.001, 'toplam': 78.85}
+model G06 tamam GECTI {'cagri_a': 23.6, 'cagri_b': 52.81, 'atayici': 0.001, 'toplam': 76.41}
+model G07 tamam GECTI {'cagri_a': 16.73, 'cagri_b': 24.89, 'atayici': 0.0, 'toplam': 41.62}
+model G08 tamam GECTI {'cagri_a': 16.69, 'cagri_b': 27.64, 'atayici': 0.0, 'toplam': 44.33}
+model G09 tamam GECTI {'cagri_a': 39.68, 'cagri_b': 27.53, 'atayici': 0.0, 'toplam': 67.22}
+model G10 desteklenmiyor - {'cagri_a': 12.24, 'toplam': 12.24}
+model G11 tamam GECTI {'cagri_a': 17.61, 'cagri_b': 30.17, 'atayici': 0.0, 'toplam': 47.78}
+model G12 tamam GECTI {'cagri_a': 25.0, 'cagri_b': 52.73, 'atayici': 0.001, 'toplam': 77.73}
+model G13 tamam GECTI {'cagri_a': 16.61, 'cagri_b': 52.27, 'atayici': 0.001, 'toplam': 68.88}
+model G14 tamam GECTI {'cagri_a': 16.85, 'cagri_b': 22.75, 'atayici': 0.0, 'toplam': 39.61}
+model G15 tamam GECTI {'cagri_a': 19.5, 'cagri_b': 36.08, 'atayici': 0.0, 'toplam': 55.59}
+model G16 tamam GECTI {'cagri_a': 23.82, 'cagri_b': 34.37, 'atayici': 0.0, 'toplam': 58.19}
+model G17 tamam GECTI {'cagri_a': 40.08, 'cagri_b': 122.24, 'atayici': 0.001, 'toplam': 162.32}
+model G18 tamam GECTI {'cagri_a': 23.65, 'cagri_b': 55.75, 'atayici': 0.0, 'toplam': 79.4}
+model G19 tamam GECTI {'cagri_a': 19.63, 'cagri_b': 27.13, 'atayici': 0.0, 'toplam': 46.76}
+model G20 tamam GECTI {'cagri_a': 25.74, 'cagri_b': 47.44, 'atayici': 0.0, 'toplam': 73.18}
+model V01 KULLANICIYA - {'cagri_a': 104.6, 'toplam': 104.6}
+model V02 tamam GECTI {'cagri_a': 23.37, 'cagri_b': 30.07, 'atayici': 0.0, 'toplam': 53.44}
+model V03 tamam GECTI {'cagri_a': 24.49, 'cagri_b': 38.48, 'atayici': 0.0, 'toplam': 62.96}
+model V04 tamam GECTI {'cagri_a': 39.45, 'cagri_b': 24.79, 'atayici': 0.0, 'toplam': 64.24}
+model V05 tamam GECTI {'cagri_a': 23.92, 'cagri_b': 40.04, 'atayici': 0.0, 'toplam': 63.95}
+model V06 tamam GECTI {'cagri_a': 18.53, 'cagri_b': 52.27, 'atayici': 0.001, 'toplam': 70.8}
+model V07 tamam GECTI {'cagri_a': 17.05, 'cagri_b': 89.87, 'atayici': 0.001, 'toplam': 106.92}
+model V08 tamam GECTI {'cagri_a': 25.8, 'cagri_b': 67.82, 'atayici': 0.0, 'toplam': 93.62}
+model V09 tamam GECTI {'cagri_a': 18.76, 'cagri_b': 35.04, 'atayici': 0.0, 'toplam': 53.8}
+model V10 desteklenmiyor - {'cagri_a': 19.56, 'toplam': 19.56}
+model V11 desteklenmiyor - {'cagri_a': 18.59, 'toplam': 18.59}
+model V12 tamam GECTI {'cagri_a': 31.68, 'cagri_b': 133.83, 'atayici': 0.001, 'toplam': 165.51}
+model V13 tamam GECTI {'cagri_a': 30.7, 'cagri_b': 94.94, 'atayici': 0.001, 'toplam': 125.64}
+model V14 tamam GECTI {'cagri_a': 58.23, 'cagri_b': 275.52, 'atayici': 0.001, 'toplam': 333.75}
+model V15 tamam GECTI {'cagri_a': 19.96, 'cagri_b': 45.27, 'atayici': 0.0, 'toplam': 65.23}
+model V16 tamam GECTI {'cagri_a': 19.37, 'cagri_b': 46.82, 'atayici': 0.0, 'toplam': 66.2}
+model V17 tamam GECTI {'cagri_a': 18.83, 'cagri_b': 20.04, 'atayici': 0.0, 'toplam': 38.87}
+model V18 tamam GECTI {'cagri_a': 34.49, 'cagri_b': 104.75, 'atayici': 0.001, 'toplam': 139.24}
+model V19 tamam GECTI {'cagri_a': 48.49, 'cagri_b': 172.96, 'atayici': 0.003, 'toplam': 221.45}
+model V20 tamam GECTI {'cagri_a': 54.91, 'cagri_b': 469.91, 'atayici': 0.003, 'toplam': 524.83}
+model V21 tamam GECTI {'cagri_a': 55.23, 'cagri_b': 180.96, 'atayici': 0.003, 'toplam': 236.18}
+model V22 tamam GECTI {'cagri_a': 54.79, 'cagri_b': 182.17, 'atayici': 0.003, 'toplam': 236.97}
+model V23 tamam KULLANICIYA {'cagri_a': 51.68, 'cagri_b': 458.83, 'atayici': 0.002, 'toplam': 510.51}
+model V24 tamam GECTI {'cagri_a': 51.82, 'cagri_b': 138.72, 'atayici': 0.002, 'toplam': 190.54}
+model V25 tamam GECTI {'cagri_a': 58.16, 'cagri_b': 71.28, 'atayici': 0.0, 'toplam': 129.44}
+model V26 tamam GECTI {'cagri_a': 24.89, 'cagri_b': 41.32, 'atayici': 0.0, 'toplam': 66.21}
+model V27 tamam GECTI {'cagri_a': 25.9, 'cagri_b': 45.94, 'atayici': 0.0, 'toplam': 71.85}
+model V28 tamam GECTI {'cagri_a': 18.07, 'cagri_b': 24.6, 'atayici': 0.0, 'toplam': 42.67}
+model V29 tamam GECTI {'cagri_a': 16.47, 'cagri_b': 26.14, 'atayici': 0.0, 'toplam': 42.61}
+model V30 tamam - {'cagri_a': 10.99, 'toplam': 10.99}
+<proje>/doc/olcum/2026-11-20_gerileme_r0.md
+bitti 0

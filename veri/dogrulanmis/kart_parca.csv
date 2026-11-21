@@ -1,0 +1,22 @@
+kart,tur,ad,gpio_no,baglanti,aktif_seviye,aciklama,kaynak,sayfa,referans,dogrulama_durumu,not_
+SuperMini,buton,BOOT,9,"GPIO9, 10K ile 3V3'e çekili; basınca GND",dusuk,BOOT butonu,248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,
+SuperMini,buton,RST,,"CHIP_EN, 10K ile 3V3'e çekili; basınca GND",dusuk,RST butonu,248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,
+SuperMini,flash,dahili flash,,ESP32-C6FH4 paket içi,,4 MB dahili flash,82c739f095c5,1,envanter satırı 2,dogrulanmadi,Kullanıcı envanterinden; kart üstünden doğrulanmadı.
+SuperMini,led,PD2,15,GPIO15 → PR9 1K → LED → GND,yuksek,mavi durum LED'i,248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,
+SuperMini,led,PD4,,TP4054 CHRG çıkışı; GPIO'ya bağlı değil,,yeşil şarj LED'i,248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,
+SuperMini,sarj,TP4054,,BAT pedi,,Li-ion şarj entegresi,248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,S2 TP4054 gösteriyor; S3 (espboards.dev) LTH7R diyor: çelişki.
+SuperMini,usb,USB-C,,D-/D+ → 22R → GPIO12 / GPIO13; USB-UART köprüsü yok,,yerel USB Serial/JTAG,248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,
+SuperMini,ws2812,LED1,8,GPIO8 (net RGB_CTRL) → DIN; VDD 3V3,,WS2812B RGB LED (0807),248cabd39c6c,1,Super Mini şematik taraması,dogrulanmadi,
+nanoESP32-C6-v0.2,buton,S1,9,GPIO9 → GND (basınca),dusuk,BOOT butonu,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı.
+nanoESP32-C6-v0.2,buton,S2,,CHIP_PU → GND (basınca),dusuk,RST butonu,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı.
+nanoESP32-C6-v0.2,flash,modül flash'ı,,"ESP32-C6-WROOM-1 içinde, çip dışında (W1 Fig. 8-1)",,16 MB (N16),82c739f095c5,1,envanter satırı 1,dogrulanmadi,Kullanıcı envanterinden; kart üstünden doğrulanmadı.
+nanoESP32-C6-v0.2,led,D3,,3V3 → R8 10K → LED,,kırmızı güç LED'i,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,Şematikte soluk (gri) çizili; takılı olup olmadığı belli değil. v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı.
+nanoESP32-C6-v0.2,usb,J5,,USB-C D-/D+ → 22R → GPIO12 (D-) / GPIO13 (D+),,yerel USB Serial/JTAG,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı.
+nanoESP32-C6-v0.2,usb_uart,U2,,"J4 USB-C → CH343P; CH343 RXD ← TXD0 (GPIO16), TXD → RXD0 (GPIO17); DTR/RTS → Q1 → CHIP_PU ve GPIO9 (otomatik indirme)",,CH343P USB-UART köprüsü,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı.
+nanoESP32-C6-v0.2,ws2812,D2,8,"GPIO8 → Q2 BSS138 seviye çevirici → DIN; DIN tarafı 10K ile 5V'a, GPIO8 tarafı 10K ile 3V3'e",,WS2812B RGB LED,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı.
+nanoESP32-C6-v1.0,buton,S1,9,GPIO9 → GND (basınca),dusuk,BOOT butonu,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,kaynak_belge,
+nanoESP32-C6-v1.0,buton,S2,,CHIP_PU → GND (basınca),dusuk,RST butonu,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,kaynak_belge,
+nanoESP32-C6-v1.0,led,D3,,3V3 → R8 10K → LED,,kırmızı güç LED'i,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,dogrulanmadi,Şematikte soluk (gri) çizili; takılı olup olmadığı belli değil.
+nanoESP32-C6-v1.0,usb,J5,,USB-C D-/D+ → 22R → GPIO12 (D-) / GPIO13 (D+),,yerel USB Serial/JTAG,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,kaynak_belge,
+nanoESP32-C6-v1.0,usb_uart,U2,,"J4 USB-C → CH343P; CH343 RXD ← TXD0 (GPIO16), TXD → RXD0 (GPIO17); DTR/RTS → Q1 → CHIP_PU ve GPIO9 (otomatik indirme)",,CH343P USB-UART köprüsü,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,kaynak_belge,
+nanoESP32-C6-v1.0,ws2812,D2,8,"GPIO8 → Q2 BSS138 seviye çevirici → DIN; DIN tarafı 10K ile 5V'a, GPIO8 tarafı 10K ile 3V3'e",,WS2812B RGB LED,a2ca1ca2112c,1,nanoESP32-C6 v1.0 şematiği,kaynak_belge,

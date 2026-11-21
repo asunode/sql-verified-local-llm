@@ -1,0 +1,1616 @@
+{
+ "aciklama": "Denetleyici vakaları — Web AI hazırladı, 2026-11-20. Kaynak: ESP32-C6 Datasheet v1.6. Beklenen hata ve uyarı KOD KÜMELERİ birebir tutmalı (her kod en az bir kez; fazla ya da eksik kod başarısızlıktır).",
+ "varsayilan_baglam": {
+  "usb_serial_jtag": true,
+  "uart0_konsol": true,
+  "jtag_pinleri": false,
+  "harici_flash_beslemesi": false
+ },
+ "vakalar": [
+  {
+   "id": "D01",
+   "aciklama": "QFN32'de GPIO10 yok (Table 2-5)",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "o1",
+      "sinyal": "OUT",
+      "gpio": 10
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_PAKETTE_YOK"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D02",
+   "aciklama": "QFN32'de GPIO25 yok (Table 2-5)",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "o1",
+      "sinyal": "OUT",
+      "gpio": 25
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_PAKETTE_YOK"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D03",
+   "aciklama": "QFN40'ta GPIO14 yok (Table 2-4)",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "o1",
+      "sinyal": "OUT",
+      "gpio": 14
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_PAKETTE_YOK"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D04",
+   "aciklama": "GPIO31 çipte yok",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "o1",
+      "sinyal": "OUT",
+      "gpio": 31
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "GECERSIZ_GPIO"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D05",
+   "aciklama": "GPIO24 flash pini, P4 (2.3.5)",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 24
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 22
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_FLASH"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D06",
+   "aciklama": "GPIO27 VDD_SPI, harici besleme yok",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "g1",
+      "arayuz": "GPIO_IN"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "g1",
+      "sinyal": "IN",
+      "gpio": 27
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_VDD_SPI"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D07",
+   "aciklama": "GPIO27 VDD_SPI, flash harici beslemeli: yalnız uyarı",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": true
+    },
+    "ihtiyaclar": [
+     {
+      "id": "g1",
+      "arayuz": "GPIO_IN"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "g1",
+      "sinyal": "IN",
+      "gpio": 27
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_VDD_SPI"
+    ]
+   }
+  },
+  {
+   "id": "D08",
+   "aciklama": "GPIO12/13 USB, USB Serial/JTAG kullanılıyor",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "u1",
+      "arayuz": "UART"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "TX",
+      "gpio": 12
+     },
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "RX",
+      "gpio": 13
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_USB"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D09",
+   "aciklama": "GPIO12/13, USB kullanılmıyor: yalnız uyarı",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": false,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "u1",
+      "arayuz": "UART"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "TX",
+      "gpio": 12
+     },
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "RX",
+      "gpio": 13
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_USB"
+    ]
+   }
+  },
+  {
+   "id": "D10",
+   "aciklama": "GPIO16/17 UART0 konsol pinleri",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "u1",
+      "arayuz": "UART"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "TX",
+      "gpio": 16
+     },
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "RX",
+      "gpio": 17
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_UART0"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D11",
+   "aciklama": "GPIO4/5 strapping + JTAG, JTAG pinleri kullanılmıyor: uyarılar",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 4
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 5
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_JTAG",
+     "PIN_STRAPPING"
+    ]
+   }
+  },
+  {
+   "id": "D12",
+   "aciklama": "GPIO4/5, JTAG pinleri kullanılıyor",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": true,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 4
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 5
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "PIN_JTAG"
+    ],
+    "uyarilar": [
+     "PIN_STRAPPING"
+    ]
+   }
+  },
+  {
+   "id": "D13",
+   "aciklama": "GPIO9 strapping: uyarı",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "o1",
+      "sinyal": "OUT",
+      "gpio": 9
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_STRAPPING"
+    ]
+   }
+  },
+  {
+   "id": "D14",
+   "aciklama": "GPIO15 strapping: uyarı",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "o1",
+      "sinyal": "OUT",
+      "gpio": 15
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_STRAPPING"
+    ]
+   }
+  },
+  {
+   "id": "D15",
+   "aciklama": "GPIO19 iki sinyale verilmiş",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     },
+     {
+      "id": "s1",
+      "arayuz": "SPI"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "SCLK",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MOSI",
+      "gpio": 20
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MISO",
+      "gpio": 21
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "CS",
+      "gpio": 22
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "CAKISMA"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D16",
+   "aciklama": "SPI'de MISO atanmamış",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "s1",
+      "arayuz": "SPI"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "SCLK",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MOSI",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "CS",
+      "gpio": 20
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "EKSIK_SINYAL"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D17",
+   "aciklama": "İstekte olmayan ihtiyaç kimliği",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "x9",
+      "sinyal": "OUT",
+      "gpio": 20
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "BILINMEYEN"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D18",
+   "aciklama": "Sözlükte olmayan sinyal adı (SCK), SCL eksik",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCK",
+      "gpio": 19
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "BILINMEYEN",
+     "EKSIK_SINYAL"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D19",
+   "aciklama": "ADC GPIO10'da olamaz (ADC1_CH0-6 = GPIO0-6, Table 2-9)",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "a1",
+      "arayuz": "ADC"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "a1",
+      "sinyal": "AIN",
+      "gpio": 10
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "SABIT_PIN"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D20",
+   "aciklama": "ADC GPIO7'de olamaz",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "a1",
+      "arayuz": "ADC"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "a1",
+      "sinyal": "AIN",
+      "gpio": 7
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "SABIT_PIN"
+    ],
+    "uyarilar": [
+     "PIN_JTAG"
+    ]
+   }
+  },
+  {
+   "id": "D21",
+   "aciklama": "ADC GPIO4'te geçerli, ama strapping + JTAG uyarısı",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "a1",
+      "arayuz": "ADC"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "a1",
+      "sinyal": "AIN",
+      "gpio": 4
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_JTAG",
+     "PIN_STRAPPING"
+    ]
+   }
+  },
+  {
+   "id": "D22",
+   "aciklama": "Deep-sleep uyandırma yalnız LP GPIO0-7 (2.3.2)",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "w1",
+      "arayuz": "WAKE"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "w1",
+      "sinyal": "IN",
+      "gpio": 18
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "SABIT_PIN"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D23",
+   "aciklama": "Deep-sleep uyandırma GPIO3'te geçerli",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "w1",
+      "arayuz": "WAKE"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "w1",
+      "sinyal": "IN",
+      "gpio": 3
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D24",
+   "aciklama": "LP I2C sabit: SDA=GPIO6, SCL=GPIO7 (Table 2-7)",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "l1",
+      "arayuz": "LP_I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "l1",
+      "sinyal": "SDA",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "l1",
+      "sinyal": "SCL",
+      "gpio": 19
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "SABIT_PIN"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D25",
+   "aciklama": "LP I2C doğru pinlerde; GPIO6/7 JTAG olduğu için uyarı",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "l1",
+      "arayuz": "LP_I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "l1",
+      "sinyal": "SDA",
+      "gpio": 6
+     },
+     {
+      "ihtiyac_id": "l1",
+      "sinyal": "SCL",
+      "gpio": 7
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": [
+     "PIN_JTAG"
+    ]
+   }
+  },
+  {
+   "id": "D26",
+   "aciklama": "8 ADC kanalı istenmiş, çipte 7 var; model 'atandi' demiş",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "a1",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a2",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a3",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a4",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a5",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a6",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a7",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a8",
+      "arayuz": "ADC"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "a1",
+      "sinyal": "AIN",
+      "gpio": 0
+     },
+     {
+      "ihtiyac_id": "a2",
+      "sinyal": "AIN",
+      "gpio": 1
+     },
+     {
+      "ihtiyac_id": "a3",
+      "sinyal": "AIN",
+      "gpio": 2
+     },
+     {
+      "ihtiyac_id": "a4",
+      "sinyal": "AIN",
+      "gpio": 3
+     },
+     {
+      "ihtiyac_id": "a5",
+      "sinyal": "AIN",
+      "gpio": 4
+     },
+     {
+      "ihtiyac_id": "a6",
+      "sinyal": "AIN",
+      "gpio": 5
+     },
+     {
+      "ihtiyac_id": "a7",
+      "sinyal": "AIN",
+      "gpio": 6
+     },
+     {
+      "ihtiyac_id": "a8",
+      "sinyal": "AIN",
+      "gpio": 7
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "ADET_ASIMI",
+     "SABIT_PIN"
+    ],
+    "uyarilar": [
+     "PIN_JTAG",
+     "PIN_STRAPPING"
+    ]
+   }
+  },
+  {
+   "id": "D27",
+   "aciklama": "8 ADC isteğine model 'mumkun_degil' demiş: doğru",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "a1",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a2",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a3",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a4",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a5",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a6",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a7",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "a8",
+      "arayuz": "ADC"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "mumkun_degil",
+    "atamalar": []
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D28",
+   "aciklama": "İki I2C; çipte bir genel I2C var (LP I2C ayrı arayüz)",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     },
+     {
+      "id": "i2",
+      "arayuz": "I2C"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "i2",
+      "sinyal": "SDA",
+      "gpio": 20
+     },
+     {
+      "ihtiyac_id": "i2",
+      "sinyal": "SCL",
+      "gpio": 21
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "ADET_ASIMI"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D29",
+   "aciklama": "İki UART, UART0 konsolda: kullanıcıya bir UART kalır",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "u1",
+      "arayuz": "UART"
+     },
+     {
+      "id": "u2",
+      "arayuz": "UART"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "TX",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "RX",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "u2",
+      "sinyal": "TX",
+      "gpio": 20
+     },
+     {
+      "ihtiyac_id": "u2",
+      "sinyal": "RX",
+      "gpio": 21
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "ADET_ASIMI"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D30",
+   "aciklama": "İki UART, UART0 konsol değil: geçerli",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": false,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "u1",
+      "arayuz": "UART"
+     },
+     {
+      "id": "u2",
+      "arayuz": "UART"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "TX",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "u1",
+      "sinyal": "RX",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "u2",
+      "sinyal": "TX",
+      "gpio": 20
+     },
+     {
+      "ihtiyac_id": "u2",
+      "sinyal": "RX",
+      "gpio": 21
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D31",
+   "aciklama": "Üç TWAI; çipte iki var",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "t1",
+      "arayuz": "TWAI"
+     },
+     {
+      "id": "t2",
+      "arayuz": "TWAI"
+     },
+     {
+      "id": "t3",
+      "arayuz": "TWAI"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "t1",
+      "sinyal": "TX",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "t1",
+      "sinyal": "RX",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "t2",
+      "sinyal": "TX",
+      "gpio": 20
+     },
+     {
+      "ihtiyac_id": "t2",
+      "sinyal": "RX",
+      "gpio": 21
+     },
+     {
+      "ihtiyac_id": "t3",
+      "sinyal": "TX",
+      "gpio": 22
+     },
+     {
+      "ihtiyac_id": "t3",
+      "sinyal": "RX",
+      "gpio": 23
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "ADET_ASIMI"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D32",
+   "aciklama": "Yedi PWM; LED PWM en çok 6 kanal",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "p1",
+      "arayuz": "PWM"
+     },
+     {
+      "id": "p2",
+      "arayuz": "PWM"
+     },
+     {
+      "id": "p3",
+      "arayuz": "PWM"
+     },
+     {
+      "id": "p4",
+      "arayuz": "PWM"
+     },
+     {
+      "id": "p5",
+      "arayuz": "PWM"
+     },
+     {
+      "id": "p6",
+      "arayuz": "PWM"
+     },
+     {
+      "id": "p7",
+      "arayuz": "PWM"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "p1",
+      "sinyal": "OUT",
+      "gpio": 0
+     },
+     {
+      "ihtiyac_id": "p2",
+      "sinyal": "OUT",
+      "gpio": 1
+     },
+     {
+      "ihtiyac_id": "p3",
+      "sinyal": "OUT",
+      "gpio": 2
+     },
+     {
+      "ihtiyac_id": "p4",
+      "sinyal": "OUT",
+      "gpio": 3
+     },
+     {
+      "ihtiyac_id": "p5",
+      "sinyal": "OUT",
+      "gpio": 10
+     },
+     {
+      "ihtiyac_id": "p6",
+      "sinyal": "OUT",
+      "gpio": 11
+     },
+     {
+      "ihtiyac_id": "p7",
+      "sinyal": "OUT",
+      "gpio": 18
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [
+     "ADET_ASIMI"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D33",
+   "aciklama": "Çözümü olan isteğe 'mumkun_degil' denmiş",
+   "istek": {
+    "paket": "QFN40",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "o1",
+      "arayuz": "GPIO_OUT"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "mumkun_degil",
+    "atamalar": []
+   },
+   "beklenen": {
+    "hatalar": [
+     "YANLIS_RET"
+    ],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D34",
+   "aciklama": "Tam geçerli atama, yalnız serbest (P2) pinler",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "i1",
+      "arayuz": "I2C"
+     },
+     {
+      "id": "s1",
+      "arayuz": "SPI"
+     },
+     {
+      "id": "a1",
+      "arayuz": "ADC"
+     },
+     {
+      "id": "p1",
+      "arayuz": "PWM"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SDA",
+      "gpio": 22
+     },
+     {
+      "ihtiyac_id": "i1",
+      "sinyal": "SCL",
+      "gpio": 23
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "SCLK",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MOSI",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MISO",
+      "gpio": 20
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "CS",
+      "gpio": 21
+     },
+     {
+      "ihtiyac_id": "a1",
+      "sinyal": "AIN",
+      "gpio": 2
+     },
+     {
+      "ihtiyac_id": "p1",
+      "sinyal": "OUT",
+      "gpio": 14
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": []
+   }
+  },
+  {
+   "id": "D35",
+   "aciklama": "Datasheet yazım hatası satırı: QFN32 GPIO3'te SPI2 geçerli olmalı (Table 2-10 ve satır tutarlılığı)",
+   "istek": {
+    "paket": "QFN32",
+    "baglam": {
+     "usb_serial_jtag": true,
+     "uart0_konsol": true,
+     "jtag_pinleri": false,
+     "harici_flash_beslemesi": false
+    },
+    "ihtiyaclar": [
+     {
+      "id": "s1",
+      "arayuz": "SPI"
+     }
+    ]
+   },
+   "atama": {
+    "durum": "atandi",
+    "atamalar": [
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "SCLK",
+      "gpio": 3
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MOSI",
+      "gpio": 18
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "MISO",
+      "gpio": 19
+     },
+     {
+      "ihtiyac_id": "s1",
+      "sinyal": "CS",
+      "gpio": 20
+     }
+    ]
+   },
+   "beklenen": {
+    "hatalar": [],
+    "uyarilar": []
+   }
+  }
+ ]
+}

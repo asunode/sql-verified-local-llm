@@ -1,0 +1,86 @@
+kart,konnektor,sira,etiket,gpio_no,tur,kaynak,sayfa,referans,dogrulama_durumu,not_
+SuperMini,H1,1,GPIO7,7,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,2,GPIO6,6,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,3,GPIO5,5,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,4,GPIO4,4,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,5,GPIO3,3,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,6,GPIO2,2,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,7,GPIO1,1,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,8,GPIO0,0,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,9,U0RXD,17,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H1,10,U0TXD,16,konnektor,248cabd39c6c,1,H1 başlığı,dogrulanmadi,
+SuperMini,H2,1,VBUS,,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,2,GND,,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,3,3V3,,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,4,GPIO20,20,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,5,GPIO19,19,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,6,GPIO18,18,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,7,GPIO15,15,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,8,GPIO14,14,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,9,GPIO9,9,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,H2,10,GPIO8,8,konnektor,248cabd39c6c,1,H2 başlığı,dogrulanmadi,
+SuperMini,PED,1,GPIO21,21,ped,248cabd39c6c,1,Microbit Pads (NC),dogrulanmadi,
+SuperMini,PED,2,GPIO22,22,ped,248cabd39c6c,1,Microbit Pads (NC),dogrulanmadi,
+SuperMini,PED,3,GPIO23,23,ped,248cabd39c6c,1,Microbit Pads (NC),dogrulanmadi,
+SuperMini,PED,4,GPIO12,12,ped,248cabd39c6c,1,Microbit Pads (NC),dogrulanmadi,
+SuperMini,PED,5,GPIO13,13,ped,248cabd39c6c,1,Microbit Pads (NC),dogrulanmadi,
+nanoESP32-C6-v0.2,J1,1,GND,,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,2,3V3,,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,3,CHIP_PU,,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,4,GPIO4,4,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,5,GPIO5,5,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,6,GPIO6,6,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,7,GPIO7,7,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,8,GPIO0,0,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,9,GPIO1,1,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,10,GPIO8,8,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,11,GPIO10,10,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,12,GPIO11,11,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,13,GPIO12,12,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,14,GPIO13,13,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J1,15,5V,,konnektor,a2ca1ca2112c,1,J1 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,1,GND,,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,2,GPIO2,2,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,3,GPIO3,3,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,4,TXD0,16,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,5,RXD0,17,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,6,GPIO15,15,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,7,GPIO23,23,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,8,GPIO22,22,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,9,GPIO21,21,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,10,GPIO20,20,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,11,GPIO19,19,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,12,GPIO18,18,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,13,GPIO9,9,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,14,GND,,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v0.2,J6,15,5V,,konnektor,a2ca1ca2112c,1,J6 konnektörü,dogrulanmadi,v1.0 şematiğinden aktarıldı; sürüm farkı doğrulanmadı
+nanoESP32-C6-v1.0,J1,1,GND,,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,2,3V3,,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,3,CHIP_PU,,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,4,GPIO4,4,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,5,GPIO5,5,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,6,GPIO6,6,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,7,GPIO7,7,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,8,GPIO0,0,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,9,GPIO1,1,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,10,GPIO8,8,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,11,GPIO10,10,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,12,GPIO11,11,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,13,GPIO12,12,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,14,GPIO13,13,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J1,15,5V,,konnektor,a2ca1ca2112c,1,J1 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,1,GND,,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,2,GPIO2,2,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,3,GPIO3,3,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,4,TXD0,16,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,5,RXD0,17,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,6,GPIO15,15,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,7,GPIO23,23,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,8,GPIO22,22,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,9,GPIO21,21,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,10,GPIO20,20,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,11,GPIO19,19,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,12,GPIO18,18,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,13,GPIO9,9,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,14,GND,,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
+nanoESP32-C6-v1.0,J6,15,5V,,konnektor,a2ca1ca2112c,1,J6 konnektörü,kaynak_belge,
